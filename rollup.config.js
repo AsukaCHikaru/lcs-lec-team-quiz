@@ -11,6 +11,7 @@ export default {
   plugins: [
     svelte({
       include: 'src/**/*.svelte',
+      emitCss: false,
     }),
     resolve({ browser: true }),
   ],

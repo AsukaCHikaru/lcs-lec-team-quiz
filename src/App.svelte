@@ -1,5 +1,14 @@
 <script>
-  export let name;
+  import Layout from './components/Layout.svelte';
 </script>
 
-<p>Hello {name}</p>
+<div class="app">
+  <Layout/>
+</div>
+
+<style>
+  .app {
+    height: 100vh;
+    width: 100%;
+  }
+</style>
