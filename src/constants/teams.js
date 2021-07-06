@@ -1,7 +1,6 @@
 import { players } from './players';
-import { Team } from './types';
 
-export const data: Team[] = [
+export const data = [
   {
     name: 'Team Solo Mid',
     abbr: 'TSM',

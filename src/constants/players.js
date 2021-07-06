@@ -1,6 +1,4 @@
-import { Player, Position } from './types';
-
-export const players: Record<Position, Record<Player['ign'], Player>> = {
+export const players = {
   TOP: {
     Dyrus: {
       ign: 'Dyrus',
