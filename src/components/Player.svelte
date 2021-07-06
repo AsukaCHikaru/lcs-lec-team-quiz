@@ -1,7 +1,5 @@
 <script>
   export let player;
-
-  console.log(player);
 </script>
 
 <div class="player-wrapper">
