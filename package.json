@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "rollup -c -w",
     "start": "sirv public",
-    "build": "rm -rf dist && rollup -c && cp -R public/ dist/"
+    "build": "rm -rf public/bundle.js && rollup -c"
   },
   "author": "",
   "license": "ISC",
