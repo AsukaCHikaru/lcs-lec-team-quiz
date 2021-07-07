@@ -1,9 +1,11 @@
 <script>
+  import Title from './Title.svelte';
   import Quiz from './Quiz.svelte';
   import Rules from './Rules.svelte';
 </script>
 
 <div class="layout-container">
+  <Title />
   <Quiz />
   <Rules />
 </div>
