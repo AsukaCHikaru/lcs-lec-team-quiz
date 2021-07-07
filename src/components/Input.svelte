@@ -1,11 +1,11 @@
 <script>
   export let question;
-  export let answer;
-  let isAttamptCorrect;
+  export let onChange;
+  export let isCorrect;
   let showWrongIcon;
 
   function handleInputChange(e) {
-    isAttamptCorrect = answer.map((a) => a.toLowerCase()).includes(e.target.value.toLowerCase());
+    onChange(question.toLowerCase(), e.target.value);
     showWrongIcon = false;
   }
 
@@ -13,13 +13,13 @@
     if (e.key !== 'Enter') {
       return;
     }
-    showWrongIcon = !isAttamptCorrect;
+    showWrongIcon = !isCorrect;
   }
 </script>
 
 <div class="input-wrapper">
   <input type="text" placeholder={question} on:input={handleInputChange} on:keyup={handleInputEnterPress} />
-  {#if isAttamptCorrect}
+  {#if isCorrect}
     <span class="correct">
       O
     </span>
