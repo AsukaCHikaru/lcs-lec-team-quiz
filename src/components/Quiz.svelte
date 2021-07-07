@@ -15,9 +15,16 @@
     <Player player={quiz.players.BOT} />
     <Player player={quiz.players.SPT} />
   </div>
-  <Input question="TEAM" answer={[...quiz.team.name, quiz.team.abbr]} />
-  <Input question="YEAR" answer={[quiz.year]} />
-  <Input question="SPLIT" answer={[quiz.split]} />
+  <Input question="Team" answer={[...quiz.team.name, quiz.team.abbr]} />
+  <Input question="Year" answer={[quiz.year]} />
+  <Input question="Split" answer={[quiz.split]} />
+  <div class="player-name-input">
+    <Input question="Top" answer={[quiz.players.TOP.ign]} />
+    <Input question="Jungle" answer={[quiz.players.JG.ign]} />
+    <Input question="Mid" answer={[quiz.players.MID.ign]} />
+    <Input question="Bot" answer={[quiz.players.BOT.ign]} />
+    <Input question="Support" answer={[quiz.players.SPT.ign]} />
+  </div>
 </div>
 
 <style>
@@ -25,11 +32,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
   .player-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+  }
+
+  .player-name-input {
+    display: flex;
   }
 </style>
