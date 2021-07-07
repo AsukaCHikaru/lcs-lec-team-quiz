@@ -37,6 +37,10 @@
     position: relative;
   }
 
+  input {
+    max-width: 100px;
+  }
+
   .correct {
     font-weight: 700;
     color: #33e04d;
