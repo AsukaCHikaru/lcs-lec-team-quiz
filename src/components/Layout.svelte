@@ -1,16 +1,20 @@
 <script>
   import Quiz from './Quiz.svelte';
+  import Rules from './Rules.svelte';
 </script>
 
 <div class="layout-container">
   <Quiz />
+  <Rules />
 </div>
 
 <style>
   .layout-container {
-    height: 100%;
-    width: 100%;
+    height: calc(100% - 4em);
+    width: calc(100% - 4em);
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
   }
 </style>

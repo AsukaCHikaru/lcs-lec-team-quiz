@@ -15,9 +15,11 @@
     <Player player={quiz.players.BOT} />
     <Player player={quiz.players.SPT} />
   </div>
-  <Input question="Team" answer={[...quiz.team.name, quiz.team.abbr]} />
-  <Input question="Year" answer={[quiz.year]} />
-  <Input question="Split" answer={[quiz.split]} />
+  <div class="team-input">
+    <Input question="Team" answer={[...quiz.team.name, quiz.team.abbr]} />
+    <Input question="Year" answer={[quiz.year]} />
+    <Input question="Split" answer={[quiz.split]} />
+  </div>
   <div class="player-name-input">
     <Input question="Top" answer={[quiz.players.TOP.ign]} />
     <Input question="Jungle" answer={[quiz.players.JG.ign]} />
@@ -40,8 +42,12 @@
     justify-content: space-between;
     width: 100%;
   }
-
+  .team-input {
+    margin: 1em 0;
+  }
   .player-name-input {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
 </style>
