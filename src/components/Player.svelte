@@ -3,7 +3,7 @@
 </script>
 
 <div class="player-wrapper">
-  <img src={`../assets/${player.nationality}.png`} alt={player.nationality}>
+  <img src={`assets/${player.nationality}.png`} alt={player.nationality}>
 </div>
 
 <style>

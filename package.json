@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "rollup -c -w",
-    "start": "sirv public"
+    "start": "sirv public",
+    "build": "rm -rf dist && rollup -c && cp -R public/ dist/"
   },
   "author": "",
   "license": "ISC",
