@@ -1,56 +1,27 @@
-import { players } from './players';
-
-export const data = [
-  {
-    name: 'Team Solo Mid',
-    abbr: 'TSM',
-    year: '2013',
-    split: 'spring',
-    players: {
-      TOP: players.TOP.Dyrus,
-      JG: players.JG.TheOddOne,
-      MID: players.MID.Reginald,
-      BOT: players.BOT.Chaox,
-      SPT: players.SPT.Xpecial,
-    },
+export const teams = {
+  TSM: {
+    name: ["Team Solo Mid"],
+    abbr: "TSM",
+    region: "NA",
   },
-  {
-    name: 'Team Solo Mid',
-    abbr: 'TSM',
-    year: '2013',
-    split: 'summer',
-    players: {
-      TOP: players.TOP.Dyrus,
-      JG: players.JG.TheOddOne,
-      MID: players.MID.Reginald,
-      BOT: players.BOT.WildTurtle,
-      SPT: players.SPT.Xpecial,
-    },
+  TL: {
+    name: ["Team Liquid", "liquid"],
+    abbr: "TL",
+    region: "NA",
   },
-  {
-    name: 'Team Solo Mid',
-    abbr: 'TSM',
-    year: '2014',
-    split: 'spring',
-    players: {
-      TOP: players.TOP.Dyrus,
-      JG: players.JG.TheOddOne,
-      MID: players.MID.Bjergsen,
-      BOT: players.BOT.WildTurtle,
-      SPT: players.SPT.Xpecial,
-    },
+  C9: {
+    name: ["Cloud 9", "cloud nine"],
+    abbr: "C9",
+    region: "NA",
   },
-  {
-    name: 'Team Solo Mid',
-    abbr: 'TSM',
-    year: '2014',
-    split: 'summer',
-    players: {
-      TOP: players.TOP.Dyrus,
-      JG: players.JG.Amazing,
-      MID: players.MID.Bjergsen,
-      BOT: players.BOT.WildTurtle,
-      SPT: players.SPT.Lustboy,
-    },
+  FNC: {
+    name: ["Fnatic"],
+    abbr: "FNC",
+    region: "EU",
   },
-];
+  G2: {
+    name: ["G2 Esports"],
+    abbr: "G2",
+    region: "EU",
+  },
+}

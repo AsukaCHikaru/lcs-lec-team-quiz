@@ -1,5 +1,5 @@
 <script>
-  import { data } from '../constants/teams';
+  import { data } from '../constants/quizzes';
   import Player from './Player.svelte';
   import Input from './Input.svelte';
 
@@ -15,7 +15,7 @@
     <Player player={quiz.players.BOT} />
     <Player player={quiz.players.SPT} />
   </div>
-  <Input question="TEAM" answer={[quiz.name, quiz.abbr]} />
+  <Input question="TEAM" answer={[...quiz.team.name, quiz.team.abbr]} />
   <Input question="YEAR" answer={[quiz.year]} />
   <Input question="SPLIT" answer={[quiz.split]} />
 </div>
