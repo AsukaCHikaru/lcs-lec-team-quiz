@@ -2,6 +2,7 @@
   export let question;
   export let onChange;
   export let isCorrect;
+  export let value;
   let showWrongIcon;
 
   function handleInputChange(e) {
@@ -18,7 +19,7 @@
 </script>
 
 <div class="input-wrapper">
-  <input type="text" placeholder={question} on:input={handleInputChange} on:keyup={handleInputEnterPress} />
+  <input type="text" bind:value={value} placeholder={question} on:input={handleInputChange} on:keyup={handleInputEnterPress} />
   {#if isCorrect}
     <span class="correct">
       O

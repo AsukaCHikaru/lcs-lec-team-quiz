@@ -11,14 +11,14 @@
 
   function resetAnswerForm () {
     answerForm = {
-      team: { value: undefined, answer: [], correct: false },
-      year: { value: undefined, answer: [], correct: false },
-      split: { value: undefined, answer: [], correct: false },
-      top: { value: undefined, answer: [], correct: false },
-      jungle: { value: undefined, answer: [], correct: false },
-      mid: { value: undefined, answer: [], correct: false },
-      bot: { value: undefined, answer: [], correct: false },
-      support: { value: undefined, answer: [], correct: false },
+      team: { value: '', answer: [], correct: false },
+      year: { value: '', answer: [], correct: false },
+      split: { value: '', answer: [], correct: false },
+      top: { value: '', answer: [], correct: false },
+      jungle: { value: '', answer: [], correct: false },
+      mid: { value: '', answer: [], correct: false },
+      bot: { value: '', answer: [], correct: false },
+      support: { value: '', answer: [], correct: false },
     };
   }
 
@@ -38,8 +38,12 @@
 
   function onInputChange (key, value) {
     answerForm[key].value = value;
-    if (key === "team" && answerForm.team.answer.includes(value.toLowerCase()) || key !== "team" && answerForm[key].answer === value.toLowerCase()) {
+    if (
+      key === "team" && answerForm.team.answer.includes(answerForm[key].value.toLowerCase()) || 
+      key !== "team" && answerForm[key].answer === answerForm[key].value.toLowerCase()
+    ) {
       answerForm[key].correct = true;
+      console.log(answerForm);
     }
     if (Object.values(answerForm).filter(q => q.correct !== true).length === 0) {
       createQuiz();
@@ -62,16 +66,48 @@
       <Player player={quiz.players.SPT} />
     </div>
     <div class="team-input">
-      <Input question="Team" onChange={onInputChange} />
-      <Input question="Year" onChange={onInputChange} />
-      <Input question="Split"onChange={onInputChange} />
+      <Input
+        question="Team"
+        onChange={onInputChange}
+        value={answerForm.team.value}
+      />
+      <Input
+        question="Year"
+        onChange={onInputChange}
+        value={answerForm.year.value}
+      />
+      <Input
+        question="Split"
+        onChange={onInputChange}
+        value={answerForm.split.value}
+      />
     </div>
     <div class="player-name-input">
-      <Input question="Top" onChange={onInputChange} />
-      <Input question="Jungle" onChange={onInputChange} />
-      <Input question="Mid" onChange={onInputChange} />
-      <Input question="Bot" onChange={onInputChange} />
-      <Input question="Support" onChange={onInputChange} /> 
+      <Input
+        question="Top"
+        onChange={onInputChange}
+        value={answerForm.top.value}
+      />
+      <Input
+        question="Jungle"
+        onChange={onInputChange}
+        value={answerForm.jungle.value}
+      />
+      <Input
+        question="Mid"
+        onChange={onInputChange}
+        value={answerForm.mid.value}
+      />
+      <Input
+        question="Bot"
+        onChange={onInputChange}
+        value={answerForm.bot.value}
+      />
+      <Input
+        question="Support"
+        onChange={onInputChange}
+        value={answerForm.support.value}
+      />
     </div>
   {/if}
   <SkipButton onClick={createQuiz} />
