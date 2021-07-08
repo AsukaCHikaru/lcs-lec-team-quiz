@@ -6,6 +6,9 @@
   import Input from './Input.svelte';
   import SkipButton from './SkipButton.svelte';
 
+  let quizNo;
+  let fullPool = data.map((_, i) => i);
+  let answeredPool = [];
   let quiz;
   let answerForm;
 
@@ -24,8 +27,12 @@
 
   function createQuiz () {
     resetAnswerForm();
-    const rng = Math.floor(Math.random() * Object.entries(data).length);
-    quiz = data[rng];
+
+    const pool = fullPool.filter(i => !answeredPool.includes(i));
+    quizNo = pool[Math.floor(Math.random() * pool.length)];
+    answeredPool.push(quizNo);
+    quiz = data[quizNo];
+
     answerForm.team.answer = [...quiz.team.name.map(n => n.toLowerCase()), quiz.team.abbr.toLowerCase()];
     answerForm.year.answer = quiz.year;
     answerForm.split.answer = quiz.split.toLowerCase();
