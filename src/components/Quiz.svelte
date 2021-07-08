@@ -70,16 +70,19 @@
         question="Team"
         onChange={onInputChange}
         value={answerForm.team.value}
+        isCorrect={answerForm.team.correct}
       />
       <Input
         question="Year"
         onChange={onInputChange}
         value={answerForm.year.value}
+        isCorrect={answerForm.year.correct}
       />
       <Input
         question="Split"
         onChange={onInputChange}
         value={answerForm.split.value}
+        isCorrect={answerForm.split.correct}
       />
     </div>
     <div class="player-name-input">
@@ -87,26 +90,31 @@
         question="Top"
         onChange={onInputChange}
         value={answerForm.top.value}
+        isCorrect={answerForm.top.correct}
       />
       <Input
         question="Jungle"
         onChange={onInputChange}
         value={answerForm.jungle.value}
+        isCorrect={answerForm.jungle.correct}
       />
       <Input
         question="Mid"
         onChange={onInputChange}
         value={answerForm.mid.value}
+        isCorrect={answerForm.mid.correct}
       />
       <Input
         question="Bot"
         onChange={onInputChange}
         value={answerForm.bot.value}
+        isCorrect={answerForm.bot.correct}
       />
       <Input
         question="Support"
         onChange={onInputChange}
         value={answerForm.support.value}
+        isCorrect={answerForm.support.correct}
       />
     </div>
   {/if}
@@ -127,6 +135,7 @@
     width: 100%;
   }
   .team-input {
+    display: flex;
     margin: 1em 0;
   }
   .player-name-input {

@@ -10,7 +10,7 @@ export default {
   },
   plugins: [
     svelte({
-      include: 'src/**/*.svelte',
+      include: ['src/**/*.svelte', 'node_modules/**/*.svelte'],
       emitCss: false,
     }),
     resolve({ browser: true }),

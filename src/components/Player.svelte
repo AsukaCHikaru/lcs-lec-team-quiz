@@ -10,6 +10,9 @@
 </div>
 
 <style>
+  .player-wrapper {
+    margin: 0 10px;
+  }
   h3 {
     text-align: center;
   }
