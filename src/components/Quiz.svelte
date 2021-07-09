@@ -43,19 +43,21 @@
     answerForm.support.answer = quiz.players.SPT.ign.toLowerCase();
   }
 
-  function onInputChange (key, value) {
+  function handleInputChance (key, value) {
     answerForm[key].value = value;
+  }
+  
+  function handleInputEnter (key) {
     if (
       key === "team" && answerForm.team.answer.includes(answerForm[key].value.toLowerCase()) || 
       key !== "team" && answerForm[key].answer === answerForm[key].value.toLowerCase()
     ) {
       answerForm[key].correct = true;
-      console.log(answerForm);
     }
     if (Object.values(answerForm).filter(q => q.correct !== true).length === 0) {
       createQuiz();
     }
-  }
+  }  
 
   onMount(() => {
     createQuiz();
@@ -75,19 +77,22 @@
     <div class="team-input">
       <Input
         question="Team"
-        onChange={onInputChange}
+        onChange={handleInputChance}
+        onEnter={handleInputEnter}
         value={answerForm.team.value}
         isCorrect={answerForm.team.correct}
       />
       <Input
         question="Year"
-        onChange={onInputChange}
+        onChange={handleInputChance}
+        onEnter={handleInputEnter}
         value={answerForm.year.value}
         isCorrect={answerForm.year.correct}
       />
       <Input
         question="Split"
-        onChange={onInputChange}
+        onChange={handleInputChance}
+        onEnter={handleInputEnter}
         value={answerForm.split.value}
         isCorrect={answerForm.split.correct}
       />
@@ -95,31 +100,36 @@
     <div class="player-name-input">
       <Input
         question="Top"
-        onChange={onInputChange}
+        onChange={handleInputChance}
+        onEnter={handleInputEnter}
         value={answerForm.top.value}
         isCorrect={answerForm.top.correct}
       />
       <Input
         question="Jungle"
-        onChange={onInputChange}
+        onChange={handleInputChance}
+        onEnter={handleInputEnter}
         value={answerForm.jungle.value}
         isCorrect={answerForm.jungle.correct}
       />
       <Input
         question="Mid"
-        onChange={onInputChange}
+        onChange={handleInputChance}
+        onEnter={handleInputEnter}
         value={answerForm.mid.value}
         isCorrect={answerForm.mid.correct}
       />
       <Input
         question="Bot"
-        onChange={onInputChange}
+        onChange={handleInputChance}
+        onEnter={handleInputEnter}
         value={answerForm.bot.value}
         isCorrect={answerForm.bot.correct}
       />
       <Input
         question="Support"
-        onChange={onInputChange}
+        onChange={handleInputChance}
+        onEnter={handleInputEnter}
         value={answerForm.support.value}
         isCorrect={answerForm.support.correct}
       />

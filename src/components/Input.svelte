@@ -4,29 +4,36 @@
 
   export let question;
   export let onChange;
+  export let onEnter;
   export let isCorrect;
   export let value;
-  let showWrongIcon;
+  let isSubmitted = false;
 
   function handleInputChange(e) {
     onChange(question.toLowerCase(), e.target.value);
-    showWrongIcon = false;
+    isSubmitted = false;
   }
 
   function handleInputEnterPress(e) {
     if (e.key !== 'Enter') {
       return;
     }
-    showWrongIcon = !isCorrect;
+    isSubmitted = true;
+    onEnter(question.toLowerCase());
+  }
+
+  // Reset submitted state when quiz is reset
+  $: if (value === '') {
+    isSubmitted = false;
   }
 </script>
 
 <div class="input-wrapper">
   <div class="icon-container">
-    <span class="correct" class:hide={!isCorrect}>
+    <span class="correct" class:hide={!isCorrect || !isSubmitted}>
       <Fa icon={faCheck} />
     </span>
-    <span class="incorrect" class:hide={!showWrongIcon}>
+    <span class="incorrect" class:hide={isCorrect || !isSubmitted}>
       <Fa icon={faTimes} />
     </span>
   </div>
