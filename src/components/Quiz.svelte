@@ -7,22 +7,26 @@
   import SkipButton from './SkipButton.svelte';
 
   let quizNo;
-  let fullPool = data.map((_, i) => i);
   let answeredPool = [];
   let quiz;
   let answerForm;
+  let currentQ = 'team';
+  
+  const fullPool = data.map((_, i) => i);
+  const defaultAnswerForm = {
+    team: { value: '', answer: [], correct: false },
+    year: { value: '', answer: [], correct: false },
+    split: { value: '', answer: [], correct: false },
+    top: { value: '', answer: [], correct: false },
+    jungle: { value: '', answer: [], correct: false },
+    mid: { value: '', answer: [], correct: false },
+    bot: { value: '', answer: [], correct: false },
+    support: { value: '', answer: [], correct: false },
+  };
+  let qs = [...Object.keys(defaultAnswerForm)];
 
   function resetAnswerForm () {
-    answerForm = {
-      team: { value: '', answer: [], correct: false },
-      year: { value: '', answer: [], correct: false },
-      split: { value: '', answer: [], correct: false },
-      top: { value: '', answer: [], correct: false },
-      jungle: { value: '', answer: [], correct: false },
-      mid: { value: '', answer: [], correct: false },
-      bot: { value: '', answer: [], correct: false },
-      support: { value: '', answer: [], correct: false },
-    };
+    answerForm = JSON.parse(JSON.stringify(defaultAnswerForm));
   }
 
   function createQuiz () {
@@ -53,11 +57,14 @@
       key !== "team" && answerForm[key].answer === answerForm[key].value.toLowerCase()
     ) {
       answerForm[key].correct = true;
+      qs.shift();
+      if (qs.length === 0) {
+        qs = [...Object.keys(defaultAnswerForm)];
+        createQuiz();
+      }
+      currentQ = qs[0];
     }
-    if (Object.values(answerForm).filter(q => q.correct !== true).length === 0) {
-      createQuiz();
-    }
-  }  
+  }
 
   onMount(() => {
     createQuiz();
@@ -68,71 +75,28 @@
 <div class="quiz-container">
   {#if quiz}
     <div class="player-container">
-      <Player player={quiz.players.TOP} />
-      <Player player={quiz.players.JG} />
-      <Player player={quiz.players.MID} />
-      <Player player={quiz.players.BOT} />
-      <Player player={quiz.players.SPT} />
+      <Player player={quiz.players.TOP} showAnswer={answerForm.top.correct} />
+      <Player player={quiz.players.JG} showAnswer={answerForm.jungle.correct} />
+      <Player player={quiz.players.MID} showAnswer={answerForm.mid.correct} />
+      <Player player={quiz.players.BOT} showAnswer={answerForm.bot.correct} />
+      <Player player={quiz.players.SPT} showAnswer={answerForm.support.correct} />
     </div>
-    <div class="team-input">
-      <Input
-        question="Team"
-        onChange={handleInputChance}
-        onEnter={handleInputEnter}
-        value={answerForm.team.value}
-        isCorrect={answerForm.team.correct}
-      />
-      <Input
-        question="Year"
-        onChange={handleInputChance}
-        onEnter={handleInputEnter}
-        value={answerForm.year.value}
-        isCorrect={answerForm.year.correct}
-      />
-      <Input
-        question="Split"
-        onChange={handleInputChance}
-        onEnter={handleInputEnter}
-        value={answerForm.split.value}
-        isCorrect={answerForm.split.correct}
-      />
+    <div class="team-answer-container">
+      <div class="team-q-wrapper">
+        <h4 class="team-q-title">Team</h4>
+        <h5 class="team-q-answer">{answerForm.team.correct ? quiz.team.abbr : '-'}</h5>
+      </div>
+      <div class="team-q-wrapper">
+        <h4 class="team-q-title">Year</h4>
+        <h5 class="team-q-answer">{answerForm.year.correct ? quiz.year : '-'}</h5>
+      </div>
+      <div class="team-q-wrapper">
+        <h4 class="team-q-title">Split</h4>
+        <h5 class="team-q-answer">{answerForm.split.correct ? quiz.split : '-'}</h5>
+      </div>
     </div>
-    <div class="player-name-input">
-      <Input
-        question="Top"
-        onChange={handleInputChance}
-        onEnter={handleInputEnter}
-        value={answerForm.top.value}
-        isCorrect={answerForm.top.correct}
-      />
-      <Input
-        question="Jungle"
-        onChange={handleInputChance}
-        onEnter={handleInputEnter}
-        value={answerForm.jungle.value}
-        isCorrect={answerForm.jungle.correct}
-      />
-      <Input
-        question="Mid"
-        onChange={handleInputChance}
-        onEnter={handleInputEnter}
-        value={answerForm.mid.value}
-        isCorrect={answerForm.mid.correct}
-      />
-      <Input
-        question="Bot"
-        onChange={handleInputChance}
-        onEnter={handleInputEnter}
-        value={answerForm.bot.value}
-        isCorrect={answerForm.bot.correct}
-      />
-      <Input
-        question="Support"
-        onChange={handleInputChance}
-        onEnter={handleInputEnter}
-        value={answerForm.support.value}
-        isCorrect={answerForm.support.correct}
-      />
+    <div class="input-container">
+      <Input question={currentQ} onChange={handleInputChance} onEnter={handleInputEnter} value={answerForm[currentQ].value} />
     </div>
   {/if}
   <SkipButton onClick={createQuiz} />
@@ -151,13 +115,16 @@
     justify-content: space-between;
     width: 100%;
   }
-  .team-input {
+  .team-answer-container {
     display: flex;
-    margin: 1em 0;
+    justify-content: center;
+    text-align: center;
   }
-  .player-name-input {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+  .team-q-wrapper {
+    width: 100px;
+    margin: 10px 20px;
+  }
+  .input-container {
+    text-align: center;
   }
 </style>
