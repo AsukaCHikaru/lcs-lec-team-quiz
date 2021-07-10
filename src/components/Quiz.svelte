@@ -3,6 +3,7 @@
 
   import { data } from '../constants/quizzes';
   import Player from './Player.svelte';
+  import Answer from './Answer.svelte';
   import Input from './Input.svelte';
   import SkipButton from './SkipButton.svelte';
 
@@ -75,25 +76,56 @@
 <div class="quiz-container">
   {#if quiz}
     <div class="player-container">
-      <Player player={quiz.players.TOP} showAnswer={answerForm.top.correct} />
-      <Player player={quiz.players.JG} showAnswer={answerForm.jungle.correct} />
-      <Player player={quiz.players.MID} showAnswer={answerForm.mid.correct} />
-      <Player player={quiz.players.BOT} showAnswer={answerForm.bot.correct} />
-      <Player player={quiz.players.SPT} showAnswer={answerForm.support.correct} />
+      <Player
+        player={quiz.players.TOP}
+        showAnswer={answerForm.top.correct}
+        isCurrentAnswering={currentQ === 'top'}
+        isCorrect={answerForm.top.correct}
+      />
+      <Player
+        player={quiz.players.JG}
+        showAnswer={answerForm.jungle.correct}
+        isCurrentAnswering={currentQ === 'jungle'}
+        isCorrect={answerForm.jungle.correct}
+      />
+      <Player
+        player={quiz.players.MID}
+        showAnswer={answerForm.mid.correct}
+        isCurrentAnswering={currentQ === 'mid'}
+        isCorrect={answerForm.mid.correct}
+      />
+      <Player
+        player={quiz.players.BOT}
+        showAnswer={answerForm.bot.correct}
+        isCurrentAnswering={currentQ === 'bot'}
+        isCorrect={answerForm.bot.correct}
+      />
+      <Player
+        player={quiz.players.SPT}
+        showAnswer={answerForm.support.correct}
+        isCurrentAnswering={currentQ === 'support'}
+        isCorrect={answerForm.support.correct}
+      />
     </div>
     <div class="team-answer-container">
-      <div class="team-q-wrapper">
-        <h4 class="team-q-title">Team</h4>
-        <h5 class="team-q-answer">{answerForm.team.correct ? quiz.team.abbr : '-'}</h5>
-      </div>
-      <div class="team-q-wrapper">
-        <h4 class="team-q-title">Year</h4>
-        <h5 class="team-q-answer">{answerForm.year.correct ? quiz.year : '-'}</h5>
-      </div>
-      <div class="team-q-wrapper">
-        <h4 class="team-q-title">Split</h4>
-        <h5 class="team-q-answer">{answerForm.split.correct ? quiz.split : '-'}</h5>
-      </div>
+      <Answer
+        question="Team"
+        answer={quiz.team.abbr}
+        isCurrentAnswering={currentQ === 'team'}
+        isCorrect={answerForm.team.correct}
+      />
+      <Answer
+        question="Year"
+        answer={quiz.year}
+        isCurrentAnswering={currentQ === 'year'}
+        isCorrect={answerForm.year.correct}
+      />
+      <Answer
+        question="Split"
+        answer={quiz.split}
+        isCurrentAnswering={currentQ === 'split'}
+        isCorrect={answerForm.split.correct}
+      />
     </div>
     <div class="input-container">
       <Input question={currentQ} onChange={handleInputChance} onEnter={handleInputEnter} value={answerForm[currentQ].value} />

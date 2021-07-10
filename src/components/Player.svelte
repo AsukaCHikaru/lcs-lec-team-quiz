@@ -1,25 +1,26 @@
 <script>
   import { positionNameMap } from '../constants/string';
 
+  import Answer from './Answer.svelte';
+
   export let player;
-  export let showAnswer;
+  export let isCurrentAnswering;
+  export let isCorrect;
 </script>
 
 <div class="player-wrapper">
-  <h3>{positionNameMap[player.position.toLowerCase()]}</h3>
   <img src={`assets/${player.nationality}.png`} alt={player.nationality}>
-  <h4 class="player-answer">{showAnswer ? player.ign : '-'}</h4>
+  <Answer
+    question={positionNameMap[player.position.toLowerCase()]}
+    answer={player.ign}
+    isCurrentAnswering={isCurrentAnswering}
+    isCorrect={isCorrect}
+  />
 </div>
 
 <style>
   .player-wrapper {
     margin: 0 10px;
-  }
-  h3 {
-    text-align: center;
-  }
-  .player-answer {
-    text-align: center;
   }
   img {
     width: 100px;
