@@ -16,7 +16,7 @@
 
 <style>
   .layout-container {
-    height: calc(100% - 48px);
+    height: calc(100vh - 48px);
     max-width: 800px;
     margin: auto;
     padding: 24px 0;
@@ -33,6 +33,7 @@
   @media (max-width: 799px) {
     .layout-container {
       padding: 24px 12px;
+      height: calc(100% - 48px);
     }
   }
 

@@ -25,11 +25,13 @@
     flex-direction: column;
   }
   img {
+    margin: 0 15px;
     width: 87px;
   }
 
   @media (max-width: 799px) {
     img {
+      margin: 0;
       width: 60px;
     }
   }

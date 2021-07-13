@@ -6,7 +6,7 @@
 </script>
 
 <div class="answer-wrapper" class:current={isCurrentAnswering}>
-  <h4 class="answer-title">{question}</h4>
+  <h4 class="answer-title">{question.toUpperCase()}</h4>
   <h5 class="answer-content">{isCorrect ? answer : '-'}</h5>
 </div>
 
@@ -32,20 +32,20 @@
   }
 
   .current {
-    animation: flash 2s linear infinite;
+    animation: flash 1.2s linear infinite;
   }
 
   @keyframes flash {
     0% {
-      background-color: #ffffff;
+      color: #ffffff;
     }
 
     50% {
-      background-color: #aaaaaa;
+      color: #555555;
     }
 
     100% {
-      background-color: #ffffff;
+      color: #ffffff;
     }
   }
 
