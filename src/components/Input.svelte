@@ -36,13 +36,26 @@
   $: if (value === '') {
     isSubmitted = false;
   }
+
+  function handleFocus () {
+    setTimeout(() => {
+      window.scrollTo(0, 100);
+    }, 200);
+  }
 </script>
 
 <div class="input-wrapper">
   <div class="input-icon-wrapper" class:show={showIcon}>
     <Fa icon={isPrevQCorrect ? faCheck : faTimes} color={isPrevQCorrect ? '#12ed28' : '#ed1228'} />
   </div>
-  <input type="text" bind:value={value} placeholder={question[0].toUpperCase() + question.substr(1)} on:input={handleInputChange} on:keyup={handleInputEnterPress} />
+  <input
+    type="text"
+    bind:value={value}
+    placeholder={question[0].toUpperCase() + question.substr(1)}
+    on:input={handleInputChange}
+    on:keyup={handleInputEnterPress}
+    on:focus={handleFocus}
+  />
 </div>
 
 <style>
