@@ -32,18 +32,23 @@
   .input-wrapper {
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin: 24px;
   }
 
   input {
-    max-width: 150px;
+    max-width: 144px;
     height: 28px;
     background-color: #232624;
     border: solid 1px #efefef;
     color: #efefef;
     font-size: 24px;
+    text-align: center;
   }
   input:focus{
     outline: none;
+  }
+  input::-webkit-input-placeholder, input::-moz-placeholder, input:-ms-input-placeholder, input:-moz-placeholder {
+    font-weight: 100;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
   }
 </style>

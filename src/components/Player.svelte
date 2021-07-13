@@ -19,6 +19,11 @@
 </div>
 
 <style>
+
+  .player-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
   img {
     width: 87px;
   }

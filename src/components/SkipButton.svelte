@@ -12,8 +12,8 @@
 
 <style>
   .wrapper {
-    margin: 1em;
-    width: 100px;
+    margin: 24px 0;
+    width: 96px;
   }
   button {
     width: 100%;

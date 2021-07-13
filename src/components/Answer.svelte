@@ -13,18 +13,22 @@
 <style>
   .answer-wrapper {
     width: 100%;
-    margin: 10px 0;
+    margin: 24px 0;
     text-align: center;
     color: #efefef;
     font-family: 'Helvetica Neue', Arial, sans-serif;
   }
   .answer-title {
+    margin: 0;
     font-weight: 700;
     font-size: 24px;
+    line-height: 1;
   }
   .answer-content {
+    margin: 24px 0 0 0;
     font-weight: 200;
     font-size: 16px;
+    line-height: 1;
   }
 
   .current {

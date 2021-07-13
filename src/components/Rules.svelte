@@ -17,8 +17,10 @@
     font-family: 'Helvetica Neue', Arial, sans-serif;
   }
   .rules-title {
+    margin: 24px 0;
     font-weight: 900;;
     font-size: 24px;
+    line-height: 1;
   }
   .rules-ul {
     margin: 0;

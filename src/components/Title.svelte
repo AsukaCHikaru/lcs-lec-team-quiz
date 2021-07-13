@@ -6,18 +6,22 @@
 <style>
   .title-wrapper {
     text-align: center;
-    margin-bottom: 5em;
+    margin-bottom: 60px;
     font-family: 'Helvetica Neue', Arial, sans-serif;
     color: #efefef;
   }
   h1 {
+    margin: 0;
     font-weight: 900;
     font-size: 64px;
+    line-height: 67px;
   }
 
   h4 {
+    margin: 12px 0 0 0;
     font-weight: 100;
     font-size: 24px;
+    line-height: 1;
   }
   a {
     color: #13eded;
