@@ -33,4 +33,15 @@
       font-size: 16px;
     }
   }
+
+  @media (max-width: 320px) {
+    .wrapper {
+      margin: 12px 0;
+      width: 48px;
+    }
+
+    button {
+      font-size: 12px;
+    }
+  }
 </style>

@@ -33,4 +33,10 @@
       width: 60px;
     }
   }
+
+  @media (max-width: 320px) {
+    img {
+      width: 50px;
+    }
+  }
 </style>

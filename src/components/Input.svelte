@@ -60,4 +60,15 @@
       font-size: 16px;
     }
   }
+
+  @media (max-width: 320px) {
+    .input-wrapper {
+      margin: 12px;
+    }
+    input {
+      font-size: 12px;
+      height: 20px;
+      max-width: 96px;
+    }
+  }
 </style>

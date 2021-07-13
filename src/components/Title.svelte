@@ -41,4 +41,17 @@
       font-size: 15px;
     }
   }
+
+  @media (max-width: 320px) {
+    .title-wrapper {
+      margin-bottom: 24px;
+    }
+    h1 {
+      font-size: 24px;
+    }
+
+    h4 {
+      font-size: 12px;
+    }
+  }
 </style>

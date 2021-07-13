@@ -35,4 +35,10 @@
       padding: 24px 12px;
     }
   }
+
+  @media (max-width: 320px) {
+    .layout-container {
+      padding: 12px;
+    }
+  }
 </style>
