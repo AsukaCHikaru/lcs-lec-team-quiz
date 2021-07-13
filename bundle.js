@@ -424,8 +424,8 @@ var app = (function () {
 
     function add_css$9() {
     	var style = element("style");
-    	style.id = "svelte-159jh08-style";
-    	style.textContent = ".title-wrapper.svelte-159jh08{text-align:center;margin-bottom:5em}h4.svelte-159jh08{font-weight:300}";
+    	style.id = "svelte-1ai2yo6-style";
+    	style.textContent = ".title-wrapper.svelte-1ai2yo6{text-align:center;margin-bottom:60px;font-family:'Helvetica Neue', Arial, sans-serif;color:#efefef}h1.svelte-1ai2yo6{margin:0;font-weight:900;font-size:64px;line-height:67px}h4.svelte-1ai2yo6{margin:12px 0 0 0;font-weight:100;font-size:24px;line-height:1}a.svelte-1ai2yo6{color:#13eded}@media(max-width: 799px){.title-wrapper.svelte-1ai2yo6{margin-bottom:36px}h1.svelte-1ai2yo6{font-size:36px;line-height:49px}h4.svelte-1ai2yo6{margin:0;font-size:15px}}@media(max-width: 320px){.title-wrapper.svelte-1ai2yo6{margin-bottom:24px}h1.svelte-1ai2yo6{font-size:24px}h4.svelte-1ai2yo6{font-size:12px}}";
     	append(document.head, style);
     }
 
@@ -436,10 +436,10 @@ var app = (function () {
     		c() {
     			div = element("div");
 
-    			div.innerHTML = `<h1 class="title">LCS LEC TEAM QUIZ</h1> 
-  <h4 class="svelte-159jh08">Inspired by <a href="https://www.youtube.com/watch?v=W-bWki07A4g" rel="noreferrer nopener" target="_blank">LEC POP QUIZ: Guess the Team</a></h4>`;
+    			div.innerHTML = `<h1 class="title svelte-1ai2yo6">LCS LEC TEAM QUIZ</h1> 
+  <h4 class="svelte-1ai2yo6">Inspired by <a href="https://www.youtube.com/watch?v=W-bWki07A4g" rel="noreferrer nopener" target="_blank" class="svelte-1ai2yo6">LEC POP QUIZ: Guess the Team</a></h4>`;
 
-    			attr(div, "class", "title-wrapper svelte-159jh08");
+    			attr(div, "class", "title-wrapper svelte-1ai2yo6");
     		},
     		m(target, anchor) {
     			insert(target, div, anchor);
@@ -456,7 +456,7 @@ var app = (function () {
     class Title extends SvelteComponent {
     	constructor(options) {
     		super();
-    		if (!document.getElementById("svelte-159jh08-style")) add_css$9();
+    		if (!document.getElementById("svelte-1ai2yo6-style")) add_css$9();
     		init(this, options, null, create_fragment$a, safe_not_equal, {});
     	}
     }
@@ -1079,14 +1079,15 @@ var app = (function () {
 
     function add_css$8() {
     	var style = element("style");
-    	style.id = "svelte-2fovdc-style";
-    	style.textContent = ".answer-wrapper.svelte-2fovdc{width:100px;margin:10px 0;text-align:center}.current.svelte-2fovdc{animation:svelte-2fovdc-flash 2s linear infinite}@keyframes svelte-2fovdc-flash{0%{background-color:#ffffff}50%{background-color:#aaaaaa}100%{background-color:#ffffff}}";
+    	style.id = "svelte-cbp21k-style";
+    	style.textContent = ".answer-wrapper.svelte-cbp21k{width:100%;margin:24px 0;text-align:center;color:#efefef;font-family:'Helvetica Neue', Arial, sans-serif}.answer-title.svelte-cbp21k{margin:0;font-weight:700;font-size:24px;line-height:1}.answer-content.svelte-cbp21k{margin:24px 0 0 0;font-weight:200;font-size:16px;line-height:1}.current.svelte-cbp21k{animation:svelte-cbp21k-flash 1.2s linear infinite}@keyframes svelte-cbp21k-flash{0%{color:#ffffff}50%{color:#555555}100%{color:#ffffff}}@media(max-width: 799px){.answer-wrapper.svelte-cbp21k{margin:12px 0}.answer-title.svelte-cbp21k{margin:0;font-size:12px}.answer-content.svelte-cbp21k{margin:12px 0 0 0;font-size:11px}}";
     	append(document.head, style);
     }
 
     function create_fragment$9(ctx) {
     	let div;
     	let h4;
+    	let t0_value = /*question*/ ctx[0].toUpperCase() + "";
     	let t0;
     	let t1;
     	let h5;
@@ -1097,13 +1098,13 @@ var app = (function () {
     		c() {
     			div = element("div");
     			h4 = element("h4");
-    			t0 = text(/*question*/ ctx[0]);
+    			t0 = text(t0_value);
     			t1 = space();
     			h5 = element("h5");
     			t2 = text(t2_value);
-    			attr(h4, "class", "answer-title");
-    			attr(h5, "class", "answer-content");
-    			attr(div, "class", "answer-wrapper svelte-2fovdc");
+    			attr(h4, "class", "answer-title svelte-cbp21k");
+    			attr(h5, "class", "answer-content svelte-cbp21k");
+    			attr(div, "class", "answer-wrapper svelte-cbp21k");
     			toggle_class(div, "current", /*isCurrentAnswering*/ ctx[2]);
     		},
     		m(target, anchor) {
@@ -1115,7 +1116,7 @@ var app = (function () {
     			append(h5, t2);
     		},
     		p(ctx, [dirty]) {
-    			if (dirty & /*question*/ 1) set_data(t0, /*question*/ ctx[0]);
+    			if (dirty & /*question*/ 1 && t0_value !== (t0_value = /*question*/ ctx[0].toUpperCase() + "")) set_data(t0, t0_value);
     			if (dirty & /*isCorrect, answer*/ 10 && t2_value !== (t2_value = (/*isCorrect*/ ctx[3] ? /*answer*/ ctx[1] : "-") + "")) set_data(t2, t2_value);
 
     			if (dirty & /*isCurrentAnswering*/ 4) {
@@ -1149,7 +1150,7 @@ var app = (function () {
     class Answer extends SvelteComponent {
     	constructor(options) {
     		super();
-    		if (!document.getElementById("svelte-2fovdc-style")) add_css$8();
+    		if (!document.getElementById("svelte-cbp21k-style")) add_css$8();
 
     		init(this, options, instance$5, create_fragment$9, safe_not_equal, {
     			question: 0,
@@ -1164,8 +1165,8 @@ var app = (function () {
 
     function add_css$7() {
     	var style = element("style");
-    	style.id = "svelte-1evmqk3-style";
-    	style.textContent = ".player-wrapper.svelte-1evmqk3{margin:0 10px}img.svelte-1evmqk3{width:100px}";
+    	style.id = "svelte-13cihtw-style";
+    	style.textContent = ".player-wrapper.svelte-13cihtw{display:flex;flex-direction:column}img.svelte-13cihtw{margin:0 15px;width:87px}@media(max-width: 799px){img.svelte-13cihtw{margin:0;width:60px}}@media(max-width: 320px){img.svelte-13cihtw{width:50px}}";
     	append(document.head, style);
     }
 
@@ -1195,8 +1196,8 @@ var app = (function () {
     			create_component(answer.$$.fragment);
     			if (img.src !== (img_src_value = `assets/${/*player*/ ctx[0].nationality}.png`)) attr(img, "src", img_src_value);
     			attr(img, "alt", img_alt_value = /*player*/ ctx[0].nationality);
-    			attr(img, "class", "svelte-1evmqk3");
-    			attr(div, "class", "player-wrapper svelte-1evmqk3");
+    			attr(img, "class", "svelte-13cihtw");
+    			attr(div, "class", "player-wrapper svelte-13cihtw");
     		},
     		m(target, anchor) {
     			insert(target, div, anchor);
@@ -1254,7 +1255,7 @@ var app = (function () {
     class Player extends SvelteComponent {
     	constructor(options) {
     		super();
-    		if (!document.getElementById("svelte-1evmqk3-style")) add_css$7();
+    		if (!document.getElementById("svelte-13cihtw-style")) add_css$7();
 
     		init(this, options, instance$4, create_fragment$8, safe_not_equal, {
     			player: 0,
@@ -1268,14 +1269,15 @@ var app = (function () {
 
     function add_css$6() {
     	var style = element("style");
-    	style.id = "svelte-1dpo3n2-style";
-    	style.textContent = ".input-wrapper.svelte-1dpo3n2{display:flex;flex-direction:column;margin:10px}input.svelte-1dpo3n2{max-width:100px}";
+    	style.id = "svelte-1fvoxwn-style";
+    	style.textContent = ".input-wrapper.svelte-1fvoxwn{display:flex;flex-direction:column;margin:24px}input.svelte-1fvoxwn{max-width:144px;height:28px;background-color:#232624;border:solid 1px #efefef;color:#efefef;font-size:24px;text-align:center}input.svelte-1fvoxwn:focus{outline:none}input.svelte-1fvoxwn::-webkit-input-placeholder,input.svelte-1fvoxwn::-moz-placeholder,input.svelte-1fvoxwn:-ms-input-placeholder,input.svelte-1fvoxwn:-moz-placeholder{font-weight:100;font-family:'Helvetica Neue', Arial, sans-serif}@media(max-width: 799px){.input-wrapper.svelte-1fvoxwn{margin:12px}input.svelte-1fvoxwn{font-size:16px}}@media(max-width: 320px){.input-wrapper.svelte-1fvoxwn{margin:12px}input.svelte-1fvoxwn{font-size:12px;height:20px;max-width:96px}}";
     	append(document.head, style);
     }
 
     function create_fragment$7(ctx) {
     	let div;
     	let input;
+    	let input_placeholder_value;
     	let mounted;
     	let dispose;
 
@@ -1284,9 +1286,9 @@ var app = (function () {
     			div = element("div");
     			input = element("input");
     			attr(input, "type", "text");
-    			attr(input, "placeholder", /*question*/ ctx[1]);
-    			attr(input, "class", "svelte-1dpo3n2");
-    			attr(div, "class", "input-wrapper svelte-1dpo3n2");
+    			attr(input, "placeholder", input_placeholder_value = /*question*/ ctx[1][0].toUpperCase() + /*question*/ ctx[1].substr(1));
+    			attr(input, "class", "svelte-1fvoxwn");
+    			attr(div, "class", "input-wrapper svelte-1fvoxwn");
     		},
     		m(target, anchor) {
     			insert(target, div, anchor);
@@ -1304,8 +1306,8 @@ var app = (function () {
     			}
     		},
     		p(ctx, [dirty]) {
-    			if (dirty & /*question*/ 2) {
-    				attr(input, "placeholder", /*question*/ ctx[1]);
+    			if (dirty & /*question*/ 2 && input_placeholder_value !== (input_placeholder_value = /*question*/ ctx[1][0].toUpperCase() + /*question*/ ctx[1].substr(1))) {
+    				attr(input, "placeholder", input_placeholder_value);
     			}
 
     			if (dirty & /*value*/ 1 && input.value !== /*value*/ ctx[0]) {
@@ -1369,7 +1371,7 @@ var app = (function () {
     class Input extends SvelteComponent {
     	constructor(options) {
     		super();
-    		if (!document.getElementById("svelte-1dpo3n2-style")) add_css$6();
+    		if (!document.getElementById("svelte-1fvoxwn-style")) add_css$6();
 
     		init(this, options, instance$3, create_fragment$7, safe_not_equal, {
     			question: 1,
@@ -1384,8 +1386,8 @@ var app = (function () {
 
     function add_css$5() {
     	var style = element("style");
-    	style.id = "svelte-349j3i-style";
-    	style.textContent = ".wrapper.svelte-349j3i{margin:1em}";
+    	style.id = "svelte-otixb6-style";
+    	style.textContent = ".wrapper.svelte-otixb6{margin:24px 0;width:96px}button.svelte-otixb6{width:100%;background-color:#efefef;border:none;font-family:'Helvetica Neue', Arial, sans-serif;font-weight:100;font-size:24px}@media(max-width: 799px){.wrapper.svelte-otixb6{margin:12px 0}button.svelte-otixb6{font-size:16px}}@media(max-width: 320px){.wrapper.svelte-otixb6{margin:12px 0;width:48px}button.svelte-otixb6{font-size:12px}}";
     	append(document.head, style);
     }
 
@@ -1400,7 +1402,8 @@ var app = (function () {
     			div = element("div");
     			button = element("button");
     			button.textContent = "Skip";
-    			attr(div, "class", "wrapper svelte-349j3i");
+    			attr(button, "class", "svelte-otixb6");
+    			attr(div, "class", "wrapper svelte-otixb6");
     		},
     		m(target, anchor) {
     			insert(target, div, anchor);
@@ -1439,7 +1442,7 @@ var app = (function () {
     class SkipButton extends SvelteComponent {
     	constructor(options) {
     		super();
-    		if (!document.getElementById("svelte-349j3i-style")) add_css$5();
+    		if (!document.getElementById("svelte-otixb6-style")) add_css$5();
     		init(this, options, instance$2, create_fragment$6, safe_not_equal, { onClick: 1 });
     	}
     }
@@ -1448,8 +1451,8 @@ var app = (function () {
 
     function add_css$4() {
     	var style = element("style");
-    	style.id = "svelte-spsr4q-style";
-    	style.textContent = ".quiz-container.svelte-spsr4q{display:flex;flex-direction:column;align-items:center;width:100%}.player-container.svelte-spsr4q{display:flex;flex-direction:row;justify-content:space-between;width:100%}.team-answer-container.svelte-spsr4q{display:flex;justify-content:center;text-align:center}.input-container.svelte-spsr4q{text-align:center}";
+    	style.id = "svelte-12e15jg-style";
+    	style.textContent = ".quiz-container.svelte-12e15jg{display:flex;flex-direction:column;justify-content:space-between;align-items:center;width:100%}.player-container.svelte-12e15jg{display:flex;flex-direction:row;justify-content:space-between;width:100%}.team-answer-container.svelte-12e15jg{display:flex;justify-content:space-between;text-align:center;width:60%}.input-container.svelte-12e15jg{text-align:center}";
     	append(document.head, style);
     }
 
@@ -1580,9 +1583,9 @@ var app = (function () {
     			t7 = space();
     			div2 = element("div");
     			create_component(input.$$.fragment);
-    			attr(div0, "class", "player-container svelte-spsr4q");
-    			attr(div1, "class", "team-answer-container svelte-spsr4q");
-    			attr(div2, "class", "input-container svelte-spsr4q");
+    			attr(div0, "class", "player-container svelte-12e15jg");
+    			attr(div1, "class", "team-answer-container svelte-12e15jg");
+    			attr(div2, "class", "input-container svelte-12e15jg");
     		},
     		m(target, anchor) {
     			insert(target, div0, anchor);
@@ -1719,7 +1722,7 @@ var app = (function () {
     			if (if_block) if_block.c();
     			t = space();
     			create_component(skipbutton.$$.fragment);
-    			attr(div, "class", "quiz-container svelte-spsr4q");
+    			attr(div, "class", "quiz-container svelte-12e15jg");
     		},
     		m(target, anchor) {
     			insert(target, div, anchor);
@@ -1840,7 +1843,7 @@ var app = (function () {
     class Quiz extends SvelteComponent {
     	constructor(options) {
     		super();
-    		if (!document.getElementById("svelte-spsr4q-style")) add_css$4();
+    		if (!document.getElementById("svelte-12e15jg-style")) add_css$4();
     		init(this, options, instance$1, create_fragment$5, safe_not_equal, {});
     	}
     }
@@ -1849,8 +1852,8 @@ var app = (function () {
 
     function add_css$3() {
     	var style = element("style");
-    	style.id = "svelte-tcv1g3-style";
-    	style.textContent = ".rules-container.svelte-tcv1g3.svelte-tcv1g3{display:flex;flex-direction:column;align-items:center}.rules-ul.svelte-tcv1g3.svelte-tcv1g3{margin:0;list-style:none}.rules-ul.svelte-tcv1g3>li.svelte-tcv1g3::before{content:'・'}";
+    	style.id = "svelte-1cugwo1-style";
+    	style.textContent = ".rules-container.svelte-1cugwo1.svelte-1cugwo1{display:flex;flex-direction:column;align-items:center;color:#efefef;font-family:'Helvetica Neue', Arial, sans-serif}.rules-title.svelte-1cugwo1.svelte-1cugwo1{margin:24px 0;font-weight:900;;;font-size:24px;line-height:1}.rules-ul.svelte-1cugwo1.svelte-1cugwo1{margin:0;list-style:none}li.svelte-1cugwo1.svelte-1cugwo1{font-weight:100;font-size:20px}.rules-ul.svelte-1cugwo1>li.svelte-1cugwo1::before{content:'・'}a.svelte-1cugwo1.svelte-1cugwo1{color:#13eded}@media(max-width: 799px){.rules-title.svelte-1cugwo1.svelte-1cugwo1{margin:12px 0;font-size:16px}li.svelte-1cugwo1.svelte-1cugwo1{font-size:12px}}";
     	append(document.head, style);
     }
 
@@ -1861,13 +1864,13 @@ var app = (function () {
     		c() {
     			div = element("div");
 
-    			div.innerHTML = `<h3 class="rules-title">Rules</h3> 
-  <ul class="rules-ul svelte-tcv1g3"><li class="svelte-tcv1g3">Including NALCS, LCS, EULCS, LEC teams. Academy rosters are not included.</li> 
-    <li class="svelte-tcv1g3">From 2013 spring to 2021 summer.</li> 
-    <li class="svelte-tcv1g3">If a roster exists for over a split, the answer is the first split in that period.</li> 
-    <li class="svelte-tcv1g3">Data is based on <a href="https://lol.fandom.com/wiki/League_of_Legends_Esports_Wiki" rel="noreferrer noopener" target="_blank">Leaguepedia</a>.</li></ul>`;
+    			div.innerHTML = `<h3 class="rules-title svelte-1cugwo1">Rules</h3> 
+  <ul class="rules-ul svelte-1cugwo1"><li class="svelte-1cugwo1">Including NALCS, LCS, EULCS, LEC teams. Academy rosters are not included.</li> 
+    <li class="svelte-1cugwo1">From 2013 spring to 2021 summer.</li> 
+    <li class="svelte-1cugwo1">If a roster exists for over a split, the answer is the first split in that period.</li> 
+    <li class="svelte-1cugwo1">Data is based on <a href="https://lol.fandom.com/wiki/League_of_Legends_Esports_Wiki" rel="noreferrer noopener" target="_blank" class="svelte-1cugwo1">Leaguepedia</a>.</li></ul>`;
 
-    			attr(div, "class", "rules-container svelte-tcv1g3");
+    			attr(div, "class", "rules-container svelte-1cugwo1");
     		},
     		m(target, anchor) {
     			insert(target, div, anchor);
@@ -1884,7 +1887,7 @@ var app = (function () {
     class Rules extends SvelteComponent {
     	constructor(options) {
     		super();
-    		if (!document.getElementById("svelte-tcv1g3-style")) add_css$3();
+    		if (!document.getElementById("svelte-1cugwo1-style")) add_css$3();
     		init(this, options, null, create_fragment$4, safe_not_equal, {});
     	}
     }
@@ -2299,8 +2302,8 @@ var app = (function () {
 
     function add_css$2() {
     	var style = element("style");
-    	style.id = "svelte-14r4rj2-style";
-    	style.textContent = ".footer-wrapper.svelte-14r4rj2{width:100%;display:flex;justify-content:flex-end}a.svelte-14r4rj2{margin:0 10px;font-size:20px}";
+    	style.id = "svelte-z37hsp-style";
+    	style.textContent = ".footer-wrapper.svelte-z37hsp{width:100%;display:flex;justify-content:flex-end}a.svelte-z37hsp{margin-left:20px;font-size:20px;color:#13eded}@media(max-width: 799px){.footer-wrapper.svelte-z37hsp{position:absolute;bottom:20px;right:12px}}";
     	append(document.head, style);
     }
 
@@ -2326,12 +2329,12 @@ var app = (function () {
     			attr(a0, "href", "https://twitter.com/asukachikaru");
     			attr(a0, "rel", "noreferrer noopener");
     			attr(a0, "target", "_blank");
-    			attr(a0, "class", "svelte-14r4rj2");
+    			attr(a0, "class", "svelte-z37hsp");
     			attr(a1, "href", "https://github.com/AsukaCHikaru/lcs-lec-flag-quiz");
     			attr(a1, "rel", "noreferrer noopener");
     			attr(a1, "target", "_blank");
-    			attr(a1, "class", "svelte-14r4rj2");
-    			attr(div, "class", "footer-wrapper svelte-14r4rj2");
+    			attr(a1, "class", "svelte-z37hsp");
+    			attr(div, "class", "footer-wrapper svelte-z37hsp");
     		},
     		m(target, anchor) {
     			insert(target, div, anchor);
@@ -2365,7 +2368,7 @@ var app = (function () {
     class Footer extends SvelteComponent {
     	constructor(options) {
     		super();
-    		if (!document.getElementById("svelte-14r4rj2-style")) add_css$2();
+    		if (!document.getElementById("svelte-z37hsp-style")) add_css$2();
     		init(this, options, null, create_fragment$2, safe_not_equal, {});
     	}
     }
@@ -2374,8 +2377,8 @@ var app = (function () {
 
     function add_css$1() {
     	var style = element("style");
-    	style.id = "svelte-s3q65m-style";
-    	style.textContent = ".layout-container.svelte-s3q65m{height:calc(100% - 4em);max-width:800px;margin:auto;padding:2em 0;display:flex;flex-direction:column}.content-container.svelte-s3q65m{flex-grow:1;display:flex;flex-direction:column;justify-content:center}";
+    	style.id = "svelte-ngt0jq-style";
+    	style.textContent = ".layout-container.svelte-ngt0jq{height:calc(100vh - 48px);max-width:800px;margin:auto;padding:24px 0;display:flex;flex-direction:column}.content-container.svelte-ngt0jq{flex-grow:1;display:flex;flex-direction:column;justify-content:center}@media(max-width: 799px){.layout-container.svelte-ngt0jq{padding:24px 12px;height:calc(100% - 48px)}}@media(max-width: 320px){.layout-container.svelte-ngt0jq{padding:12px}}";
     	append(document.head, style);
     }
 
@@ -2406,8 +2409,8 @@ var app = (function () {
     			create_component(rules.$$.fragment);
     			t2 = space();
     			create_component(footer.$$.fragment);
-    			attr(div0, "class", "content-container svelte-s3q65m");
-    			attr(div1, "class", "layout-container svelte-s3q65m");
+    			attr(div0, "class", "content-container svelte-ngt0jq");
+    			attr(div1, "class", "layout-container svelte-ngt0jq");
     		},
     		m(target, anchor) {
     			insert(target, div1, anchor);
@@ -2450,7 +2453,7 @@ var app = (function () {
     class Layout extends SvelteComponent {
     	constructor(options) {
     		super();
-    		if (!document.getElementById("svelte-s3q65m-style")) add_css$1();
+    		if (!document.getElementById("svelte-ngt0jq-style")) add_css$1();
     		init(this, options, null, create_fragment$1, safe_not_equal, {});
     	}
     }
@@ -2459,8 +2462,8 @@ var app = (function () {
 
     function add_css() {
     	var style = element("style");
-    	style.id = "svelte-17pnb6i-style";
-    	style.textContent = ".app.svelte-17pnb6i{height:100vh;width:100%}";
+    	style.id = "svelte-jjl2k2-style";
+    	style.textContent = ".app.svelte-jjl2k2{height:100%;width:100%;background-color:#232624}";
     	append(document.head, style);
     }
 
@@ -2474,7 +2477,7 @@ var app = (function () {
     		c() {
     			div = element("div");
     			create_component(layout.$$.fragment);
-    			attr(div, "class", "app svelte-17pnb6i");
+    			attr(div, "class", "app svelte-jjl2k2");
     		},
     		m(target, anchor) {
     			insert(target, div, anchor);
@@ -2501,7 +2504,7 @@ var app = (function () {
     class App extends SvelteComponent {
     	constructor(options) {
     		super();
-    		if (!document.getElementById("svelte-17pnb6i-style")) add_css();
+    		if (!document.getElementById("svelte-jjl2k2-style")) add_css();
     		init(this, options, null, create_fragment, safe_not_equal, {});
     	}
     }
