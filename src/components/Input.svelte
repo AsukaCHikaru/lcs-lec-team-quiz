@@ -1,9 +1,15 @@
 <script>
+  import Fa from 'svelte-fa';
+  import { faCheck, faTimes } from '@fortawesome/free-solid-svg-icons';
+
   export let question;
   export let onChange;
   export let onEnter;
   export let value;
+  export let isPrevQCorrect;
   let isSubmitted = false;
+  let showIcon = false;
+  let showIconTimeout;
 
   function handleInputChange(e) {
     onChange(question.toLowerCase(), e.target.value);
@@ -16,6 +22,14 @@
     }
     isSubmitted = true;
     onEnter(question.toLowerCase());
+    showIcon = true;
+    if (showIconTimeout) {
+      clearTimeout(showIconTimeout);
+    }
+    showIconTimeout = setTimeout(() => {
+      showIcon = false;
+      clearTimeout(showIconTimeout);
+    }, 1000);
   }
 
   // Reset submitted state when quiz is reset
@@ -25,6 +39,9 @@
 </script>
 
 <div class="input-wrapper">
+  <div class="input-icon-wrapper" class:show={showIcon}>
+    <Fa icon={isPrevQCorrect ? faCheck : faTimes} color={isPrevQCorrect ? '#12ed28' : '#ed1228'} />
+  </div>
   <input type="text" bind:value={value} placeholder={question[0].toUpperCase() + question.substr(1)} on:input={handleInputChange} on:keyup={handleInputEnterPress} />
 </div>
 
@@ -33,6 +50,30 @@
     display: flex;
     flex-direction: column;
     margin: 24px;
+  }
+
+  .input-icon-wrapper {
+    margin: 0 0 12px 0;
+    visibility: hidden;
+  }
+
+  .show {
+    visibility: visible;
+    animation: fadeout 1s ease-out 1;
+  }
+
+  @keyframes fadeout {
+    0% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0.5;
+    }
+
+    100% {
+      opacity: 0;
+    }
   }
 
   input {

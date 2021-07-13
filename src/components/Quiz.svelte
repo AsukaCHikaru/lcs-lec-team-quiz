@@ -12,6 +12,7 @@
   let quiz;
   let answerForm;
   let currentQ = 'team';
+  let isPrevQCorrect = false;
   
   const fullPool = data.map((_, i) => i);
   const defaultAnswerForm = {
@@ -57,13 +58,22 @@
       key === "team" && answerForm.team.answer.includes(answerForm[key].value.toLowerCase()) || 
       key !== "team" && answerForm[key].answer === answerForm[key].value.toLowerCase()
     ) {
+      isPrevQCorrect = true;
       answerForm[key].correct = true;
       qs.shift();
       if (qs.length === 0) {
-        qs = [...Object.keys(defaultAnswerForm)];
-        createQuiz();
+        const newQuizTimeout = setTimeout(() => {
+          createQuiz();
+          qs = [...Object.keys(defaultAnswerForm)];
+          currentQ = qs[0];
+          clearTimeout(newQuizTimeout);
+        }, 1000);
       }
-      currentQ = qs[0];
+      else {
+        currentQ = qs[0];
+      }
+    } else {
+      isPrevQCorrect = false;
     }
   }
 
@@ -128,7 +138,13 @@
       />
     </div>
     <div class="input-container">
-      <Input question={currentQ} onChange={handleInputChance} onEnter={handleInputEnter} value={answerForm[currentQ].value} />
+      <Input
+        question={currentQ}
+        onChange={handleInputChance}
+        onEnter={handleInputEnter}
+        value={answerForm[currentQ].value}
+        isPrevQCorrect={isPrevQCorrect}
+      />
     </div>
   {/if}
   <SkipButton onClick={createQuiz} />
