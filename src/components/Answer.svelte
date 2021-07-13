@@ -48,4 +48,18 @@
       background-color: #ffffff;
     }
   }
+
+  @media (max-width: 799px) {
+    .answer-wrapper {
+      margin: 12px 0;
+    }
+    .answer-title {
+      margin: 0;
+      font-size: 12px;
+    }
+    .answer-content {
+      margin: 12px 0 0 0;
+      font-size: 11px;
+    }
+  }
 </style>

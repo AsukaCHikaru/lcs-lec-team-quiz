@@ -37,4 +37,15 @@
   a {
     color: #13eded;
   }
+
+  @media (max-width: 799px) {
+    .rules-title {
+      margin: 12px 0;
+      font-size: 16px;
+    }
+
+    li {
+      font-size: 12px;
+    }
+  }
 </style>

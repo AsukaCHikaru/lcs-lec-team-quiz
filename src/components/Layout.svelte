@@ -16,10 +16,10 @@
 
 <style>
   .layout-container {
-    height: calc(100% - 4em);
+    height: calc(100% - 48px);
     max-width: 800px;
     margin: auto;
-    padding: 2em 0;
+    padding: 24px 0;
     display: flex;
     flex-direction: column;
   }
@@ -28,5 +28,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  @media (max-width: 799px) {
+    .layout-container {
+      padding: 24px 12px;
+    }
   }
 </style>

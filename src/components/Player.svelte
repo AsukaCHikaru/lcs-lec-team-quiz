@@ -27,4 +27,10 @@
   img {
     width: 87px;
   }
+
+  @media (max-width: 799px) {
+    img {
+      width: 60px;
+    }
+  }
 </style>

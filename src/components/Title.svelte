@@ -26,4 +26,19 @@
   a {
     color: #13eded;
   }
+
+  @media (max-width: 799px) {
+    .title-wrapper {
+      margin-bottom: 36px;
+    }
+    h1 {
+      font-size: 36px;
+      line-height: 49px;
+    }
+
+    h4 {
+      margin: 0;
+      font-size: 15px;
+    }
+  }
 </style>

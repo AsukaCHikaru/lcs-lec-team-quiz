@@ -23,4 +23,14 @@
     font-weight: 100;
     font-size: 24px;
   }
+
+  @media (max-width: 799px) {
+    .wrapper {
+      margin: 12px 0;
+    }
+
+    button {
+      font-size: 16px;
+    }
+  }
 </style>

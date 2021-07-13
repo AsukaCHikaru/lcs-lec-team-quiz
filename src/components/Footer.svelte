@@ -20,4 +20,12 @@
     font-size: 20px;
     color: #13eded;
   }
+
+  @media (max-width: 799px) {
+    .footer-wrapper {
+      position: absolute;
+      bottom: 20px;
+      right: 12px;
+    }
+  }
 </style>

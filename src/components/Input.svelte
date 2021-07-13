@@ -51,4 +51,13 @@
     font-weight: 100;
     font-family: 'Helvetica Neue', Arial, sans-serif;
   }
+
+  @media (max-width: 799px) {
+    .input-wrapper {
+      margin: 12px;
+    }
+    input {
+      font-size: 16px;
+    }
+  }
 </style>
