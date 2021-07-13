@@ -25,7 +25,7 @@
 </script>
 
 <div class="input-wrapper">
-  <input type="text" bind:value={value} placeholder={question} on:input={handleInputChange} on:keyup={handleInputEnterPress} />
+  <input type="text" bind:value={value} placeholder={question[0].toUpperCase() + question.substr(1)} on:input={handleInputChange} on:keyup={handleInputEnterPress} />
 </div>
 
 <style>
@@ -36,6 +36,14 @@
   }
 
   input {
-    max-width: 100px;
+    max-width: 150px;
+    height: 28px;
+    background-color: #232624;
+    border: solid 1px #efefef;
+    color: #efefef;
+    font-size: 24px;
+  }
+  input:focus{
+    outline: none;
   }
 </style>

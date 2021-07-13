@@ -12,9 +12,19 @@
 
 <style>
   .answer-wrapper {
-    width: 100px;
+    width: 100%;
     margin: 10px 0;
     text-align: center;
+    color: #efefef;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+  }
+  .answer-title {
+    font-weight: 700;
+    font-size: 24px;
+  }
+  .answer-content {
+    font-weight: 200;
+    font-size: 16px;
   }
 
   .current {

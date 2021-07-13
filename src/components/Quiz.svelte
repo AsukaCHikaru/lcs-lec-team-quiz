@@ -138,6 +138,7 @@
   .quiz-container {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
   }
@@ -149,8 +150,9 @@
   }
   .team-answer-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
+    width: 60%;
   }
   .team-q-wrapper {
     width: 100px;

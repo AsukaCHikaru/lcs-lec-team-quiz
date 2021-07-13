@@ -10,5 +10,6 @@
   .app {
     height: 100vh;
     width: 100%;
+    background-color: #232624;
   }
 </style>

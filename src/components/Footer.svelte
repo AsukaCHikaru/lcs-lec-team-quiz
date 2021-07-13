@@ -16,7 +16,8 @@
   }
 
   a {
-    margin: 0 10px;
+    margin-left: 20px;
     font-size: 20px;
+    color: #13eded;
   }
 </style>

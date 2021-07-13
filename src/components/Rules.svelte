@@ -13,12 +13,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #efefef;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+  }
+  .rules-title {
+    font-weight: 900;;
+    font-size: 24px;
   }
   .rules-ul {
     margin: 0;
     list-style: none;
   }
+  li {
+    font-weight: 100;
+    font-size: 20px;
+  }
   .rules-ul > li::before {
     content: '・';
+  }
+
+  a {
+    color: #13eded;
   }
 </style>
