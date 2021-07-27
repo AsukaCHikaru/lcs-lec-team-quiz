@@ -6,6 +6,7 @@
   import Answer from './Answer.svelte';
   import Input from './Input.svelte';
   import SkipButton from './SkipButton.svelte';
+  import { generalizeName } from '../utils/stringUtils';
 
   let quizNo;
   let answeredPool = [];
@@ -38,15 +39,16 @@
     quizNo = pool[Math.floor(Math.random() * pool.length)];
     answeredPool.push(quizNo);
     quiz = data[quizNo];
+    console.log(quiz);
 
-    answerForm.team.answer = [...quiz.team.name.map(n => n.toLowerCase()), quiz.team.abbr.toLowerCase()];
+    answerForm.team.answer = [...quiz.team.name.map(name => generalizeName(name)), quiz.team.abbr.toLowerCase()];
     answerForm.year.answer = quiz.year;
     answerForm.split.answer = quiz.split.toLowerCase();
-    answerForm.top.answer = quiz.players.TOP.ign.toLowerCase();
-    answerForm.jungle.answer = quiz.players.JG.ign.toLowerCase();
-    answerForm.mid.answer = quiz.players.MID.ign.toLowerCase();
-    answerForm.bot.answer = quiz.players.BOT.ign.toLowerCase();
-    answerForm.support.answer = quiz.players.SPT.ign.toLowerCase();
+    answerForm.top.answer = [...quiz.players.TOP.ign.map(name => generalizeName(name))];
+    answerForm.jungle.answer = [...quiz.players.JG.ign.map(name => generalizeName(name))];
+    answerForm.mid.answer = [...quiz.players.MID.ign.map(name => generalizeName(name))];
+    answerForm.bot.answer = [...quiz.players.BOT.ign.map(name => generalizeName(name))];
+    answerForm.support.answer = [...quiz.players.SPT.ign.map(name => generalizeName(name))];
   }
 
   function handleInputChance (key, value) {
@@ -55,8 +57,14 @@
   
   function handleInputEnter (key) {
     if (
-      key === "team" && answerForm.team.answer.includes(answerForm[key].value.toLowerCase()) || 
-      key !== "team" && answerForm[key].answer === answerForm[key].value.toLowerCase()
+      key === "team" && answerForm.team.answer.includes(generalizeName(answerForm[key].value)) || 
+      key === "top" && answerForm.top.answer.includes(generalizeName(answerForm[key].value)) || 
+      key === "jungle" && answerForm.jungle.answer.includes(generalizeName(answerForm[key].value)) || 
+      key === "mid" && answerForm.mid.answer.includes(generalizeName(answerForm[key].value)) || 
+      key === "bot" && answerForm.bot.answer.includes(generalizeName(answerForm[key].value)) || 
+      key === "support" && answerForm.support.answer.includes(generalizeName(answerForm[key].value)) || 
+      key === "year" && answerForm[key].answer === generalizeName(answerForm[key].value) ||
+      key === "split" && answerForm[key].answer === generalizeName(answerForm[key].value)
     ) {
       isPrevQCorrect = true;
       answerForm[key].correct = true;

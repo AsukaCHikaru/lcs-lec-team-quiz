@@ -370,6 +370,7 @@ export const data = [
     team: teams.SK,
     year: "2013",
     split: "spring",
+    region: "EU",
     players: {
       TOP: players.TOP.Kev1n,
       JG: players.JG.HyrqBot,
@@ -382,6 +383,7 @@ export const data = [
     team: teams.SK,
     year: "2015",
     split: "spring",
+    region: "EU",
     players: {
       TOP: players.TOP.fredy122,
       JG: players.JG.Svenskeren,
@@ -394,6 +396,7 @@ export const data = [
     team: teams.GMB,
     year: "2013",
     split: "summer",
+    region: "EU",
     players: {
       TOP: players.TOP.Darien,
       JG: players.JG.Diamondprox,
@@ -406,6 +409,7 @@ export const data = [
     team: teams.GMB,
     year: "2015",
     split: "spring",
+    region: "EU",
     players: {
       TOP: players.TOP.Cabochard,
       JG: players.JG.Diamondprox,
@@ -418,6 +422,7 @@ export const data = [
     team: teams.SHC,
     year: "2014",
     split: "summer",
+    region: "EU",
     players: {
       TOP: players.TOP.Mimer,
       JG: players.JG.Impaler,
@@ -430,6 +435,7 @@ export const data = [
     team: teams.H2K,
     year: "2016",
     split: "spring",
+    region: "EU",
     players: {
       TOP: players.TOP.Odoamne,
       JG: players.JG.Jankos,
@@ -442,6 +448,7 @@ export const data = [
     team: teams.UOL,
     year: "2015",
     split: "spring",
+    region: "EU",
     players: {
       TOP: players.TOP.Vizicsasci,
       JG: players.JG.Kikis,
@@ -454,6 +461,7 @@ export const data = [
     team: teams.OG,
     year: "2015",
     split: "summer",
+    region: "EU",
     players: {
       TOP: players.TOP.sOAZ,
       JG: players.JG.Amazing,
@@ -466,6 +474,7 @@ export const data = [
     team: teams.OG,
     year: "2020",
     split: "spring",
+    region: "EU",
     players: {
       TOP: players.TOP.Alphari,
       JG: players.JG.Xerxe,
@@ -478,6 +487,7 @@ export const data = [
     team: teams.MSF,
     year: "2017",
     split: "summer",
+    region: "EU",
     players: {
       TOP: players.TOP.Alphari,
       JG: players.JG.Maxlore,
@@ -490,6 +500,7 @@ export const data = [
     team: teams.S04,
     year: "2018",
     split: "summer",
+    region: "EU",
     players: {
       TOP: players.TOP.Vizicsasci,
       JG: players.JG.Amazing,
@@ -502,6 +513,7 @@ export const data = [
     team: teams.S04,
     year: "2020",
     split: "summer",
+    region: "EU",
     players: {
       TOP: players.TOP.Odoamne,
       JG: players.JG.Gilius,

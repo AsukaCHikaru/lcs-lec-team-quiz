@@ -12,7 +12,7 @@
   <img src={`assets/${player.nationality}.png`} alt={player.nationality}>
   <Answer
     question={positionNameMap[player.position.toLowerCase()]}
-    answer={player.ign}
+    answer={player.ign[0]}
     isCurrentAnswering={isCurrentAnswering}
     isCorrect={isCorrect}
   />
