@@ -20,7 +20,7 @@
     background-color: #efefef;
     border: none;
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    font-weight: 100;
+    font-weight: 200;
     font-size: 24px;
   }
 

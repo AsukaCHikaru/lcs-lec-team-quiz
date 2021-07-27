@@ -27,7 +27,7 @@
     list-style: none;
   }
   li {
-    font-weight: 100;
+    font-weight: 200;
     font-size: 20px;
   }
   .rules-ul > li::before {

@@ -102,7 +102,7 @@
     outline: none;
   }
   input::-webkit-input-placeholder, input::-moz-placeholder, input:-ms-input-placeholder, input:-moz-placeholder {
-    font-weight: 100;
+    font-weight: 200;
     font-family: 'Helvetica Neue', Arial, sans-serif;
   }
 

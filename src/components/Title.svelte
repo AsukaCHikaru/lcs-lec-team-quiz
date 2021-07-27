@@ -19,7 +19,7 @@
 
   h4 {
     margin: 12px 0 0 0;
-    font-weight: 100;
+    font-weight: 200;
     font-size: 24px;
     line-height: 1;
   }
@@ -32,7 +32,7 @@
       margin-bottom: 36px;
     }
     h1 {
-      font-size: 36px;
+      font-size: 34px;
       line-height: 49px;
     }
 
