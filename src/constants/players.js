@@ -60,6 +60,41 @@ export const players = {
       position: "TOP",
       nationality: "DK",
     },
+    Gamsu: {
+      ign: "Gamsu",
+      position: "TOP",
+      nationality: "KR",
+    },
+    RFLegendary: {
+      ign: ["RF", "RFLegendary"],
+      position: "TOP",
+      nationality: "UA",
+    },
+    Seraph: {
+      ign: "Seraph",
+      position: "TOP",
+      nationality: "KR",
+    },
+    SSumday: {
+      ign: "SSumday",
+      position: "TOP",
+      nationality: "KR",
+    },
+    Flame: {
+      ign: "Flame",
+      position: "TOP",
+      nationality: "KR",
+    },
+    Solo: {
+      ign: "Solo",
+      position: "TOP",
+      nationality: "US",
+    },
+    FakeGod: {
+      ign: "FakeGod",
+      position: "TOP",
+      nationality: "US",
+    },
   },
   JG: {
     TheOddOne: {
@@ -132,6 +167,31 @@ export const players = {
       position: "JG",
       nationality: "KR",
     },
+    Crumbz: {
+      ign: "Crumbz",
+      position: "JG",
+      nationality: "VE",
+    },
+    Lira: {
+      ign: "Lira",
+      position: "JG",
+      nationality: "KR",
+    },
+    Closer: {
+      ign: "Closer",
+      position: "JG",
+      nationality: "TR",
+    },
+    Dexter: {
+      ign: "Dexter",
+      position: "JG",
+      nationality: "DE",
+    },
+    Josedeodo: {
+      ign: "Josedeodo",
+      position: "JG",
+      nationality: "AR",
+    },
   },
   MID: {
     Reginald: {
@@ -178,6 +238,56 @@ export const players = {
       ign: "Nemesis",
       position: "MID",
       nationality: "SI",
+    },
+    Shiphtur: {
+      ign: "Shiphtur",
+      position: "MID",
+      nationality: "CA",
+    },
+    AlexIch: {
+      ign: "AlexIch",
+      position: "MID",
+      nationality: "RU"
+    },
+    Nisqy: {
+      ign: "Nisqy",
+      position: "MID",
+      nationality: "BE",
+    },
+    Ry0ma: {
+      ign: "Ry0ma",
+      position: "MID",
+      nationality: "AU",
+    },
+    Eika: {
+      ign: "Eika",
+      position: "MID",
+      nationality: "FR",
+    },
+    Pobelter: {
+      ign: "Pobelter",
+      position: "MID",
+      nationality: "US",
+    },
+    Palafox: {
+      ign: "Palafox",
+      position: "MID",
+      nationality: "US",
+    },
+    Link: {
+      ign: "Link",
+      position: "MID",
+      nationality: "US", 
+    },
+    Ryu: {
+      ign: "Ryu",
+      position: "MID",
+      nationality: "KR",
+    },
+    Jiizuke: {
+      ign: "Jiizuke",
+      position: "MID",
+      nationality: "IT",
     },
   },
   BOT: {
@@ -245,6 +355,46 @@ export const players = {
       ign: "Perkz",
       position: "BOT",
       nationality: "HR",
+    },
+    CoreJJ: {
+      ign: "CoreJJ",
+      position: "BOT",
+      nationality: "KR",
+    },
+    Freeze: {
+      ign: "Freeze",
+      position: "BOT",
+      nationality: "CZ"
+    },
+    Apollo: {
+      ign: "Apollo",
+      position: "BOT",
+      nationality: "US",
+    },
+    FBI: {
+      ign: "FBI",
+      position: "BOT",
+      nationality: "AU",
+    },
+    CodySun: {
+      ign: "CodySun",
+      position: "BOT",
+      nationality: "CA",
+    },
+    Johnsun: {
+      ign: "Johnsun",
+      position: "BOT",
+      nationality: "CA",
+    },
+    Bang: {
+      ign: "Bang",
+      position: "BOT",
+      nationality: "KR",
+    },
+    Danny: {
+      ign: "Danny",
+      position: "BOT",
+      nationality: "US",
     },
   },
   SPT: {
@@ -323,5 +473,45 @@ export const players = {
       position: "SPT",
       nationality: "SI",
     },
+    KiWiKiD: {
+      ign: "KiWiKiD",
+      position: "SPT",
+      nationality: "US",
+    },
+    Remilia: {
+      ign: ["Remi", "Remilia"],
+      position: "SPT",
+      nationality: "US",
+    },
+    Hakuho: {
+      ign: "Hakuho",
+      position: "SPT",
+      nationality: "US",
+    },
+    Huhi: {
+      ign: "Huhi",
+      position: "SPT",
+      nationality: "KR",
+    },
+    Olleh: {
+      ign: "Olleh",
+      position: "SPT",
+      nationality: "KR",
+    },
+    aphromoo: {
+      ign: "aphromoo",
+      position: "SPT",
+      nationality: "US",
+    },
+    Dreams: {
+      ign: "Dreams",
+      position: "SPT",
+      nationality: "KR",
+    },
+    IgNar: {
+      ign: "IgNar",
+      position: "SPT",
+      nationality: "KR",
+    }
   },
 };
