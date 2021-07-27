@@ -95,6 +95,51 @@ export const players = {
       position: "TOP",
       nationality: "US",
     },
+    Spontexx: {
+      ign: "Spontexx",
+      position: "TOP",
+      nationality: "FR",
+    },
+    Kev1n: {
+      ign: "Kev1n",
+      position: "TOP",
+      nationality: "DE",
+    },
+    fredy122: {
+      ign: "fredy122",
+      position: "TOP",
+      nationality: "GB",
+    },
+    Cabochard: {
+      ign: "Cabochard",
+      position: "FR",
+      nationality: "FR",
+    },
+    Darien: {
+      ign: "Darien",
+      position: "TOP",
+      nationality: "RU",
+    },
+    Mimer: {
+      ign: "Mimer",
+      position: "TOP",
+      nationality: "SE",
+    },
+    Odoamne: {
+      ign: "Odoamne",
+      position: "TOP",
+      nationality: "RO",
+    },
+    Vizicsasci: {
+      ign: "Vizicsacsi",
+      position: "TOP",
+      nationality: "HU",
+    },
+    Kerp: {
+      ign: "Kerp",
+      position: "TOP",
+      nationality: "DE",
+    },
   },
   JG: {
     TheOddOne: {
@@ -192,6 +237,51 @@ export const players = {
       position: "JG",
       nationality: "AR",
     },
+    Malunoo: {
+      ign: "Malunoo",
+      position: "JG",
+      nationality: "SE",
+    },
+    HyrqBot: {
+      ign: "HyrqBot",
+      position: "JG",
+      nationality: "FR",
+    },
+    Diamondprox: {
+      ign: "Diamondprox",
+      position: "JG",
+      nationality: "RU",
+    },
+    Impaler: {
+      ign: "Impaler",
+      position: "JG",
+      nationality: "GB",
+    },
+    Kikis: {
+      ign: "Kikis",
+      position: "JG",
+      nationality: "PL",
+    },
+    Araneae: {
+      ign: "Araneae",
+      position: "JG",
+      nationality: "ES",
+    },
+    Xerxe: {
+      ign: "Xerxe",
+      position: "JG",
+      nationality: "RO",
+    },
+    Maxlore: {
+      ign: "Maxlore",
+      position: "JG",
+      nationality: "GB",
+    },
+    Gilius: {
+      ign: "Gilius",
+      position: "JG",
+      nationality: "TR",
+    },
   },
   MID: {
     Reginald: {
@@ -288,6 +378,46 @@ export const players = {
       ign: "Jiizuke",
       position: "MID",
       nationality: "IT",
+    },
+    Shushei: {
+      ign: "Shushei",
+      position: "MID",
+      nationality: "PL",
+    },
+    Ocelote: {
+      ign: "Ocelote",
+      position: "MID",
+      nationality: "ES",
+    },
+    Fox: {
+      ign: "Fox",
+      position: "MID",
+      nationality: "SE",
+    },
+    NiQ: {
+      ign: "NiQ",
+      position: "MID",
+      nationality: "PL",
+    },
+    Selfie: {
+      ign: "SELFIE",
+      position: "MID",
+      nationality: "PL",
+    },
+    ForellenLord: {
+      ign: "ForellenLord",
+      position: "MID",
+      nationality: "DE",
+    },
+    Nukeduck: {
+      ign: "Nukeduck",
+      position: "MID",
+      nationality: "NO",
+    },
+    Abbedagge: {
+      ign: "abbedagge",
+      position: "MID",
+      nationality: "DE",
     },
   },
   BOT: {
@@ -396,6 +526,66 @@ export const players = {
       position: "BOT",
       nationality: "US",
     },
+    HosaN: {
+      ign: "HosaN",
+      position: "BOT",
+      nationality: "PL",
+    },
+    CandyPanda: {
+      ign: "CandyPanda",
+      position: "BOT",
+      nationality: "DE",
+    },
+    FORG1VEN: {
+      ign: ["FORG1VEN", "FORG1VENGRE"],
+      position: "BOT",
+      nationality: "GR",
+    },
+    P1noy: {
+      ign: "P1noy",
+      position: "BOT",
+      nationality: "DK",
+    },
+    Genja: {
+      ign: ["Genja", "Genja007"],
+      position: "BOT",
+      nationality: "RU",
+    },
+    MrRalleZ: {
+      ign: "MrRalleZ",
+      position: "BOT",
+      nationality: "DK",
+    },
+    Vardags: {
+      ign: "Vardags",
+      position: "BOT",
+      nationality: "SE",
+    },
+    Creaton: {
+      ign: "Creaton",
+      position: "BOT",
+      nationality: "PL",
+    },
+    Niels: {
+      ign: "Niels",
+      position: "BOT",
+      nationality: "DK",
+    },
+    Upset: {
+      ign: "Upset",
+      position: "BOT",
+      nationality: "DE",
+    },
+    HansSama: {
+      ign: "Hans Sama",
+      position: "BOT",
+      nationality: "FR",
+    },
+    Neon: {
+      ign: "Neon",
+      position: "BOT",
+      nationality: "SI",
+    },
   },
   SPT: {
     Xpecial: {
@@ -444,7 +634,7 @@ export const players = {
       nationality: "CA",
     },
     NRated: {
-      ign: "NRated",
+      ign: "nRated",
       position: "SPT",
       nationality: "DE",
     },
@@ -512,6 +702,46 @@ export const players = {
       ign: "IgNar",
       position: "SPT",
       nationality: "KR",
-    }
+    },
+    Muvert: {
+      ign: "Muvert",
+      position: "SPT",
+      nationality: "SE",
+    },
+    Nyph: {
+      ign: "Nyph",
+      position: "SPT",
+      nationality: "DE",
+    },
+    Edward: {
+      ign: "Edward",
+      position: "SPT",
+      nationality: "AM",
+    },
+    Voidle: {
+      ign: "Voidle",
+      position: "SPT",
+      nationality: "EE",
+    },
+    kaSing: {
+      ign: "kaSing",
+      position: "SPT",
+      nationality: "GB",
+    },
+    Vander: {
+      ign: "Vander",
+      position: "SPT",
+      nationality: "PL",
+    },
+    Jree: {
+      ign: "Jree",
+      position: "SPT",
+      nationality: "SE",
+    },
+    Destiny: {
+      ign: "Destiny",
+      position: "SPT",
+      nationality: "AU",
+    },
   },
 };

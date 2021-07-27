@@ -64,4 +64,54 @@ export const teams = {
     abbr: "G2",
     region: "EU",
   },
+  DB: {
+    name: ["DragonBorns"],
+    abbr: "DB",
+    region: "EU",
+  },
+  SK: {
+    name: ["SK Gaming"],
+    abbr: "SK",
+    region: "EU",
+  },
+  GMB: {
+    name: ["Gambit", "Gambit Gaming"],
+    abbr: "GMB",
+    region: "EU",
+  },
+  SHC: {
+    name: ["Supa Hot Crew"],
+    abbr: "SHC",
+    region: "EU",
+  },
+  H2K: {
+    name: ["H2K Gaming"],
+    abbr: "H2K",
+    region: "EU",
+  },
+  UOL: {
+    name: ["Unicorns of Love"],
+    abbr: "UOL",
+    region: "EU",
+  },
+  ATN: {
+    name: ["Team ALTERNATE", "ALTERNATE"],
+    abbr: "ATN",
+    region: "EU",
+  },
+  OG: {
+    name: ["Origen"],
+    abbr: "OG",
+    region: "EU",
+  },
+  MSF: {
+    name: ["Misfits", "Misfits Gaming"],
+    abbr: "MSF",
+    region: "EU",
+  },
+  S04: {
+    name: ["Schalke", "Schalke 04"],
+    abbr: "S04",
+    region: "EU",
+  },
 }
