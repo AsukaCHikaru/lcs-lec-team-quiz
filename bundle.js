@@ -424,8 +424,8 @@ var app = (function () {
 
     function add_css$9() {
     	var style = element("style");
-    	style.id = "svelte-1ai2yo6-style";
-    	style.textContent = ".title-wrapper.svelte-1ai2yo6{text-align:center;margin-bottom:60px;font-family:'Helvetica Neue', Arial, sans-serif;color:#efefef}h1.svelte-1ai2yo6{margin:0;font-weight:900;font-size:64px;line-height:67px}h4.svelte-1ai2yo6{margin:12px 0 0 0;font-weight:100;font-size:24px;line-height:1}a.svelte-1ai2yo6{color:#13eded}@media(max-width: 799px){.title-wrapper.svelte-1ai2yo6{margin-bottom:36px}h1.svelte-1ai2yo6{font-size:36px;line-height:49px}h4.svelte-1ai2yo6{margin:0;font-size:15px}}@media(max-width: 320px){.title-wrapper.svelte-1ai2yo6{margin-bottom:24px}h1.svelte-1ai2yo6{font-size:24px}h4.svelte-1ai2yo6{font-size:12px}}";
+    	style.id = "svelte-ofjdxr-style";
+    	style.textContent = ".title-wrapper.svelte-ofjdxr{text-align:center;margin-bottom:60px;font-family:'Helvetica Neue', Arial, sans-serif;color:#efefef}h1.svelte-ofjdxr{margin:0;font-weight:900;font-size:64px;line-height:67px}h4.svelte-ofjdxr{margin:12px 0 0 0;font-weight:200;font-size:24px;line-height:1}a.svelte-ofjdxr{color:#13eded}@media(max-width: 799px){.title-wrapper.svelte-ofjdxr{margin-bottom:36px}h1.svelte-ofjdxr{font-size:34px;line-height:49px}h4.svelte-ofjdxr{margin:0;font-size:15px}}@media(max-width: 320px){.title-wrapper.svelte-ofjdxr{margin-bottom:24px}h1.svelte-ofjdxr{font-size:24px}h4.svelte-ofjdxr{font-size:12px}}";
     	append(document.head, style);
     }
 
@@ -436,10 +436,10 @@ var app = (function () {
     		c() {
     			div = element("div");
 
-    			div.innerHTML = `<h1 class="title svelte-1ai2yo6">LCS LEC TEAM QUIZ</h1> 
-  <h4 class="svelte-1ai2yo6">Inspired by <a href="https://www.youtube.com/watch?v=W-bWki07A4g" rel="noreferrer nopener" target="_blank" class="svelte-1ai2yo6">LEC POP QUIZ: Guess the Team</a></h4>`;
+    			div.innerHTML = `<h1 class="title svelte-ofjdxr">LCS LEC TEAM QUIZ</h1> 
+  <h4 class="svelte-ofjdxr">Inspired by <a href="https://www.youtube.com/watch?v=W-bWki07A4g" rel="noreferrer nopener" target="_blank" class="svelte-ofjdxr">LEC POP QUIZ: Guess the Team</a></h4>`;
 
-    			attr(div, "class", "title-wrapper svelte-1ai2yo6");
+    			attr(div, "class", "title-wrapper svelte-ofjdxr");
     		},
     		m(target, anchor) {
     			insert(target, div, anchor);
@@ -456,7 +456,7 @@ var app = (function () {
     class Title extends SvelteComponent {
     	constructor(options) {
     		super();
-    		if (!document.getElementById("svelte-1ai2yo6-style")) add_css$9();
+    		if (!document.getElementById("svelte-ofjdxr-style")) add_css$9();
     		init(this, options, null, create_fragment$a, safe_not_equal, {});
     	}
     }
@@ -1675,8 +1675,8 @@ var app = (function () {
 
     function add_css$6() {
     	var style = element("style");
-    	style.id = "svelte-l6kw8x-style";
-    	style.textContent = ".input-wrapper.svelte-l6kw8x{display:flex;flex-direction:column;margin:24px}.input-icon-wrapper.svelte-l6kw8x{margin:0 0 12px 0;visibility:hidden}.show.svelte-l6kw8x{visibility:visible;animation:svelte-l6kw8x-fadeout 1s ease-out 1}@keyframes svelte-l6kw8x-fadeout{0%{opacity:1}50%{opacity:0.5}100%{opacity:0}}input.svelte-l6kw8x{max-width:144px;height:28px;background-color:#232624;border:solid 1px #efefef;color:#efefef;font-size:24px;text-align:center}input.svelte-l6kw8x:focus{outline:none}input.svelte-l6kw8x::-webkit-input-placeholder,input.svelte-l6kw8x::-moz-placeholder,input.svelte-l6kw8x:-ms-input-placeholder,input.svelte-l6kw8x:-moz-placeholder{font-weight:100;font-family:'Helvetica Neue', Arial, sans-serif}@media(max-width: 799px){.input-wrapper.svelte-l6kw8x{margin:12px}input.svelte-l6kw8x{font-size:16px}}@media(max-width: 320px){.input-wrapper.svelte-l6kw8x{margin:12px}input.svelte-l6kw8x{font-size:12px;height:20px;max-width:96px}}";
+    	style.id = "svelte-1alut56-style";
+    	style.textContent = ".input-wrapper.svelte-1alut56{display:flex;flex-direction:column;margin:24px}.input-icon-wrapper.svelte-1alut56{margin:0 0 12px 0;visibility:hidden}.show.svelte-1alut56{visibility:visible;animation:svelte-1alut56-fadeout 1s ease-out 1}@keyframes svelte-1alut56-fadeout{0%{opacity:1}50%{opacity:0.5}100%{opacity:0}}input.svelte-1alut56{max-width:144px;height:28px;background-color:#232624;border:solid 1px #efefef;color:#efefef;font-size:24px;text-align:center}input.svelte-1alut56:focus{outline:none}input.svelte-1alut56::-webkit-input-placeholder,input.svelte-1alut56::-moz-placeholder,input.svelte-1alut56:-ms-input-placeholder,input.svelte-1alut56:-moz-placeholder{font-weight:200;font-family:'Helvetica Neue', Arial, sans-serif}@media(max-width: 799px){.input-wrapper.svelte-1alut56{margin:12px}input.svelte-1alut56{font-size:16px}}@media(max-width: 320px){.input-wrapper.svelte-1alut56{margin:12px}input.svelte-1alut56{font-size:12px;height:20px;max-width:96px}}";
     	append(document.head, style);
     }
 
@@ -1705,12 +1705,12 @@ var app = (function () {
     			create_component(fa.$$.fragment);
     			t = space();
     			input = element("input");
-    			attr(div0, "class", "input-icon-wrapper svelte-l6kw8x");
+    			attr(div0, "class", "input-icon-wrapper svelte-1alut56");
     			toggle_class(div0, "show", /*showIcon*/ ctx[3]);
     			attr(input, "type", "text");
     			attr(input, "placeholder", input_placeholder_value = /*question*/ ctx[1][0].toUpperCase() + /*question*/ ctx[1].substr(1));
-    			attr(input, "class", "svelte-l6kw8x");
-    			attr(div1, "class", "input-wrapper svelte-l6kw8x");
+    			attr(input, "class", "svelte-1alut56");
+    			attr(div1, "class", "input-wrapper svelte-1alut56");
     		},
     		m(target, anchor) {
     			insert(target, div1, anchor);
@@ -1843,7 +1843,7 @@ var app = (function () {
     class Input extends SvelteComponent {
     	constructor(options) {
     		super();
-    		if (!document.getElementById("svelte-l6kw8x-style")) add_css$6();
+    		if (!document.getElementById("svelte-1alut56-style")) add_css$6();
 
     		init(this, options, instance$2, create_fragment$6, safe_not_equal, {
     			question: 1,
@@ -1859,8 +1859,8 @@ var app = (function () {
 
     function add_css$5() {
     	var style = element("style");
-    	style.id = "svelte-otixb6-style";
-    	style.textContent = ".wrapper.svelte-otixb6{margin:24px 0;width:96px}button.svelte-otixb6{width:100%;background-color:#efefef;border:none;font-family:'Helvetica Neue', Arial, sans-serif;font-weight:100;font-size:24px}@media(max-width: 799px){.wrapper.svelte-otixb6{margin:12px 0}button.svelte-otixb6{font-size:16px}}@media(max-width: 320px){.wrapper.svelte-otixb6{margin:12px 0;width:48px}button.svelte-otixb6{font-size:12px}}";
+    	style.id = "svelte-q1fj1v-style";
+    	style.textContent = ".wrapper.svelte-q1fj1v{margin:24px 0;width:96px}button.svelte-q1fj1v{width:100%;background-color:#efefef;border:none;font-family:'Helvetica Neue', Arial, sans-serif;font-weight:200;font-size:24px}@media(max-width: 799px){.wrapper.svelte-q1fj1v{margin:12px 0}button.svelte-q1fj1v{font-size:16px}}@media(max-width: 320px){.wrapper.svelte-q1fj1v{margin:12px 0;width:48px}button.svelte-q1fj1v{font-size:12px}}";
     	append(document.head, style);
     }
 
@@ -1875,8 +1875,8 @@ var app = (function () {
     			div = element("div");
     			button = element("button");
     			button.textContent = "Skip";
-    			attr(button, "class", "svelte-otixb6");
-    			attr(div, "class", "wrapper svelte-otixb6");
+    			attr(button, "class", "svelte-q1fj1v");
+    			attr(div, "class", "wrapper svelte-q1fj1v");
     		},
     		m(target, anchor) {
     			insert(target, div, anchor);
@@ -1915,7 +1915,7 @@ var app = (function () {
     class SkipButton extends SvelteComponent {
     	constructor(options) {
     		super();
-    		if (!document.getElementById("svelte-otixb6-style")) add_css$5();
+    		if (!document.getElementById("svelte-q1fj1v-style")) add_css$5();
     		init(this, options, instance$1, create_fragment$5, safe_not_equal, { onClick: 1 });
     	}
     }
@@ -2346,8 +2346,8 @@ var app = (function () {
 
     function add_css$3() {
     	var style = element("style");
-    	style.id = "svelte-1cugwo1-style";
-    	style.textContent = ".rules-container.svelte-1cugwo1.svelte-1cugwo1{display:flex;flex-direction:column;align-items:center;color:#efefef;font-family:'Helvetica Neue', Arial, sans-serif}.rules-title.svelte-1cugwo1.svelte-1cugwo1{margin:24px 0;font-weight:900;;;font-size:24px;line-height:1}.rules-ul.svelte-1cugwo1.svelte-1cugwo1{margin:0;list-style:none}li.svelte-1cugwo1.svelte-1cugwo1{font-weight:100;font-size:20px}.rules-ul.svelte-1cugwo1>li.svelte-1cugwo1::before{content:'・'}a.svelte-1cugwo1.svelte-1cugwo1{color:#13eded}@media(max-width: 799px){.rules-title.svelte-1cugwo1.svelte-1cugwo1{margin:12px 0;font-size:16px}li.svelte-1cugwo1.svelte-1cugwo1{font-size:12px}}";
+    	style.id = "svelte-130z752-style";
+    	style.textContent = ".rules-container.svelte-130z752.svelte-130z752{display:flex;flex-direction:column;align-items:center;color:#efefef;font-family:'Helvetica Neue', Arial, sans-serif}.rules-title.svelte-130z752.svelte-130z752{margin:24px 0;font-weight:900;;;font-size:24px;line-height:1}.rules-ul.svelte-130z752.svelte-130z752{margin:0;list-style:none}li.svelte-130z752.svelte-130z752{font-weight:200;font-size:20px}.rules-ul.svelte-130z752>li.svelte-130z752::before{content:'・'}a.svelte-130z752.svelte-130z752{color:#13eded}@media(max-width: 799px){.rules-title.svelte-130z752.svelte-130z752{margin:12px 0;font-size:16px}li.svelte-130z752.svelte-130z752{font-size:12px}}";
     	append(document.head, style);
     }
 
@@ -2358,13 +2358,13 @@ var app = (function () {
     		c() {
     			div = element("div");
 
-    			div.innerHTML = `<h3 class="rules-title svelte-1cugwo1">Rules</h3> 
-  <ul class="rules-ul svelte-1cugwo1"><li class="svelte-1cugwo1">Including NALCS, LCS, EULCS, LEC teams. Academy rosters are not included.</li> 
-    <li class="svelte-1cugwo1">From 2013 spring to 2021 summer.</li> 
-    <li class="svelte-1cugwo1">If a roster exists for over a split, the answer is the first split in that period.</li> 
-    <li class="svelte-1cugwo1">Data is based on <a href="https://lol.fandom.com/wiki/League_of_Legends_Esports_Wiki" rel="noreferrer noopener" target="_blank" class="svelte-1cugwo1">Leaguepedia</a>.</li></ul>`;
+    			div.innerHTML = `<h3 class="rules-title svelte-130z752">Rules</h3> 
+  <ul class="rules-ul svelte-130z752"><li class="svelte-130z752">Including NALCS, LCS, EULCS, LEC teams. Academy rosters are not included.</li> 
+    <li class="svelte-130z752">From 2013 spring to 2021 summer.</li> 
+    <li class="svelte-130z752">If a roster exists for over a split, the answer is the first split in that period.</li> 
+    <li class="svelte-130z752">Data is based on <a href="https://lol.fandom.com/wiki/League_of_Legends_Esports_Wiki" rel="noreferrer noopener" target="_blank" class="svelte-130z752">Leaguepedia</a>.</li></ul>`;
 
-    			attr(div, "class", "rules-container svelte-1cugwo1");
+    			attr(div, "class", "rules-container svelte-130z752");
     		},
     		m(target, anchor) {
     			insert(target, div, anchor);
@@ -2381,7 +2381,7 @@ var app = (function () {
     class Rules extends SvelteComponent {
     	constructor(options) {
     		super();
-    		if (!document.getElementById("svelte-1cugwo1-style")) add_css$3();
+    		if (!document.getElementById("svelte-130z752-style")) add_css$3();
     		init(this, options, null, create_fragment$3, safe_not_equal, {});
     	}
     }
