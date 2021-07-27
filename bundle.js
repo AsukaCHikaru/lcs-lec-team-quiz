@@ -464,327 +464,747 @@ var app = (function () {
     const players = {
       TOP: {
         Dyrus: {
-          ign: "Dyrus",
+          ign: ["Dyrus"],
           position: "TOP",
           nationality: "US",
         },
         Hauntzer: {
-          ign: "Hauntzer",
+          ign: ["Hauntzer"],
           position: "TOP",
           nationality: "US",
         },
         BrokenBlade: {
-          ign: "BrokenBlade",
+          ign: ["BrokenBlade"],
           position: "TOP",
           nationality: "DE",
         },
         Impact: {
-          ign: "Impact",
+          ign: ["Impact"],
           position: "TOP",
           nationality: "KR",
         },
         Licorice: {
-          ign: "Licorice",
+          ign: ["Licorice"],
           position: "TOP",
           nationality: "CA",
         },
         Fudge: {
-          ign: "Fudge",
+          ign: ["Fudge"],
           position: "TOP",
           nationality: "AU",
         },
         Alphari: {
-          ign: "Alphari",
+          ign: ["Alphari"],
           position: "TOP",
           nationality: "GB",
         },
         sOAZ: {
-          ign: "sOAZ",
+          ign: ["sOAZ"],
           position: "TOP",
           nationality: "FR",
         },
         Huni: {
-          ign: "Huni",
+          ign: ["Huni"],
           position: "TOP",
           nationality: "KR",
         },
         Bwipo: {
-          ign: "Bwipo",
+          ign: ["Bwipo"],
           position: "TOP",
           nationality: "BE",
         },
         Kikis: {
-          ign: "Kikis",
+          ign: ["Kikis"],
           position: "TOP",
           nationality: "PL",
         },
         Wunder: {
-          ign: "Wunder",
+          ign: ["Wunder"],
           position: "TOP",
           nationality: "DK",
+        },
+        Gamsu: {
+          ign: ["Gamsu"],
+          position: "TOP",
+          nationality: "KR",
+        },
+        RFLegendary: {
+          ign: ["RF", "RFLegendary"],
+          position: "TOP",
+          nationality: "UA",
+        },
+        Seraph: {
+          ign: ["Seraph"],
+          position: "TOP",
+          nationality: "KR",
+        },
+        SSumday: {
+          ign: ["SSumday"],
+          position: "TOP",
+          nationality: "KR",
+        },
+        Flame: {
+          ign: ["Flame"],
+          position: "TOP",
+          nationality: "KR",
+        },
+        Solo: {
+          ign: ["Solo"],
+          position: "TOP",
+          nationality: "US",
+        },
+        FakeGod: {
+          ign: ["FakeGod"],
+          position: "TOP",
+          nationality: "US",
+        },
+        Spontexx: {
+          ign: ["Spontexx"],
+          position: "TOP",
+          nationality: "FR",
+        },
+        Kev1n: {
+          ign: ["Kev1n"],
+          position: "TOP",
+          nationality: "DE",
+        },
+        fredy122: {
+          ign: ["fredy122"],
+          position: "TOP",
+          nationality: "GB",
+        },
+        Cabochard: {
+          ign: ["Cabochard"],
+          position: "TOP",
+          nationality: "FR",
+        },
+        Darien: {
+          ign: ["Darien"],
+          position: "TOP",
+          nationality: "RU",
+        },
+        Mimer: {
+          ign: ["Mimer"],
+          position: "TOP",
+          nationality: "SE",
+        },
+        Odoamne: {
+          ign: ["Odoamne"],
+          position: "TOP",
+          nationality: "RO",
+        },
+        Vizicsasci: {
+          ign: ["Vizicsacsi"],
+          position: "TOP",
+          nationality: "HU",
+        },
+        Kerp: {
+          ign: ["Kerp"],
+          position: "TOP",
+          nationality: "DE",
         },
       },
       JG: {
         TheOddOne: {
-          ign: "TheOddOne",
+          ign: ["TheOddOne"],
           position: "JG",
           nationality: "CA",
         },
         Amazing: {
-          ign: "Amazing",
+          ign: ["Amazing"],
           position: "JG",
           nationality: "DE",
         },
         Svenskeren: {
-          ign: "Svenskeren",
+          ign: ["Svenskeren"],
           position: "JG",
           nationality: "DK",
         },
         Grig: {
-          ign: "Grig",
+          ign: ["Grig"],
           position: "JG",
           nationality: "US",
         },
         Spica: {
-          ign: "Spica",
+          ign: ["Spica"],
           position: "JG",
           nationality: "CN",
         },
         Xmithie: {
-          ign: "Xmithie",
+          ign: ["Xmithie"],
           position: "JG",
           nationality: "PH",
         },
         Santorin: {
-          ign: "Santorin",
+          ign: ["Santorin"],
           position: "JG",
           nationality: "DK",
         },
         Blaber: {
-          ign: "Blaber",
+          ign: ["Blaber"],
           position: "JG",
           nationality: "US",
         },
         Cyanide: {
-          ign: "Cyanide",
+          ign: ["Cyanide"],
           position: "JG",
           nationality: "FI",
         },
         Reignover: {
-          ign: "Reignover",
+          ign: ["Reignover"],
           position: "JG",
           nationality: "KR",
         },
         Broxah: {
-          ign: "Broxah",
+          ign: ["Broxah"],
           position: "JG",
           nationality: "DK",
         },
         Selfmade: {
-          ign: "Selfmade",
+          ign: ["Selfmade"],
           position: "JG",
           nationality: "PL",
         },
         Jankos: {
-          ign: "Jankos",
+          ign: ["Jankos"],
           position: "JG",
           nationality: "PL",
         },
         Trick: {
-          ign: "Trick",
+          ign: ["Trick"],
           position: "JG",
           nationality: "KR",
+        },
+        Crumbz: {
+          ign: ["Crumbz"],
+          position: "JG",
+          nationality: "VE",
+        },
+        Lira: {
+          ign: ["Lira"],
+          position: "JG",
+          nationality: "KR",
+        },
+        Closer: {
+          ign: ["Closer"],
+          position: "JG",
+          nationality: "TR",
+        },
+        Dexter: {
+          ign: ["Dexter"],
+          position: "JG",
+          nationality: "DE",
+        },
+        Josedeodo: {
+          ign: ["Josedeodo"],
+          position: "JG",
+          nationality: "AR",
+        },
+        Malunoo: {
+          ign: ["Malunoo"],
+          position: "JG",
+          nationality: "SE",
+        },
+        HyrqBot: {
+          ign: ["HyrqBot"],
+          position: "JG",
+          nationality: "FR",
+        },
+        Diamondprox: {
+          ign: ["Diamondprox"],
+          position: "JG",
+          nationality: "RU",
+        },
+        Impaler: {
+          ign: ["Impaler"],
+          position: "JG",
+          nationality: "GB",
+        },
+        Kikis: {
+          ign: ["Kikis"],
+          position: "JG",
+          nationality: "PL",
+        },
+        Araneae: {
+          ign: ["Araneae"],
+          position: "JG",
+          nationality: "ES",
+        },
+        Xerxe: {
+          ign: ["Xerxe"],
+          position: "JG",
+          nationality: "RO",
+        },
+        Maxlore: {
+          ign: ["Maxlore"],
+          position: "JG",
+          nationality: "GB",
+        },
+        Gilius: {
+          ign: ["Gilius"],
+          position: "JG",
+          nationality: "TR",
         },
       },
       MID: {
         Reginald: {
-          ign: "Reginald",
+          ign: ["Reginald"],
           position: "MID",
           nationality: "US",
         },
         Bjergsen: {
-          ign: "Bjergsen",
+          ign: ["Bjergsen"],
           position: "MID",
           nationality: "DK",
         },
         PowerOfEvil: {
-          ign: "PowerOfEvil",
+          ign: ["PowerOfEvil"],
           position: "MID",
           nationality: "DE",
         },
         Jensen: {
-          ign: "Jensen",
+          ign: ["Jensen"],
           position: "MID",
           nationality: "DK",
         },
         Perkz: {
-          ign: "Perkz",
+          ign: ["Perkz"],
           position: "MID",
           nationality: "HR",
         },
         XPeke: {
-          ign: "XPeke",
+          ign: ["XPeke"],
           position: "MID",
           nationality: "ES",
         },
         Febiven: {
-          ign: "Febiven",
+          ign: ["Febiven"],
           position: "MID",
           nationality: "NL",
         },
         Caps: {
-          ign: "Caps",
+          ign: ["Caps"],
           position: "MID",
           nationality: "DK",
         },
         Nemesis: {
-          ign: "Nemesis",
+          ign: ["Nemesis"],
           position: "MID",
           nationality: "SI",
+        },
+        Shiphtur: {
+          ign: ["Shiphtur"],
+          position: "MID",
+          nationality: "CA",
+        },
+        AlexIch: {
+          ign: ["AlexIch"],
+          position: "MID",
+          nationality: "RU"
+        },
+        Nisqy: {
+          ign: ["Nisqy"],
+          position: "MID",
+          nationality: "BE",
+        },
+        Ry0ma: {
+          ign: ["Ry0ma"],
+          position: "MID",
+          nationality: "AU",
+        },
+        Eika: {
+          ign: ["Eika"],
+          position: "MID",
+          nationality: "FR",
+        },
+        Pobelter: {
+          ign: ["Pobelter"],
+          position: "MID",
+          nationality: "US",
+        },
+        Palafox: {
+          ign: ["Palafox"],
+          position: "MID",
+          nationality: "US",
+        },
+        Link: {
+          ign: ["Link"],
+          position: "MID",
+          nationality: "US", 
+        },
+        Ryu: {
+          ign: ["Ryu"],
+          position: "MID",
+          nationality: "KR",
+        },
+        Jiizuke: {
+          ign: ["Jiizuke"],
+          position: "MID",
+          nationality: "IT",
+        },
+        Shushei: {
+          ign: ["Shushei"],
+          position: "MID",
+          nationality: "PL",
+        },
+        Ocelote: {
+          ign: ["Ocelote"],
+          position: "MID",
+          nationality: "ES",
+        },
+        Fox: {
+          ign: ["Fox"],
+          position: "MID",
+          nationality: "SE",
+        },
+        NiQ: {
+          ign: ["NiQ"],
+          position: "MID",
+          nationality: "PL",
+        },
+        Selfie: {
+          ign: ["SELFIE"],
+          position: "MID",
+          nationality: "PL",
+        },
+        ForellenLord: {
+          ign: ["ForellenLord"],
+          position: "MID",
+          nationality: "DE",
+        },
+        Nukeduck: {
+          ign: ["Nukeduck"],
+          position: "MID",
+          nationality: "NO",
+        },
+        Abbedagge: {
+          ign: ["Abbedagge"],
+          position: "MID",
+          nationality: "DE",
         },
       },
       BOT: {
         Chaox: {
-          ign: "Chaox",
+          ign: ["Chaox"],
           position: "BOT",
           nationality: "CN",
         },
         WildTurtle: {
-          ign: "WildTurtle",
+          ign: ["WildTurtle"],
           position: "BOT",
           nationality: "CA",
         },
         Doublelift: {
-          ign: "Doublelift",
+          ign: ["Doublelift"],
           position: "BOT",
           nationality: "US",
         },
         Zven: {
-          ign: "Zven",
+          ign: ["Zven"],
           position: "BOT",
           nationality: "DK",
         },
         Lost: {
-          ign: "Lost",
+          ign: ["Lost"],
           position: "BOT",
           nationality: "NZ",
         },
         Tactical: {
-          ign: "Tactical",
+          ign: ["Tactical"],
           position: "BOT",
           nationality: "US",
         },
         Sneaky: {
-          ign: "Sneaky",
+          ign: ["Sneaky"],
           position: "BOT",
           nationality: "US",
         },
         YellOwStaR: {
-          ign: "YellOwStaR",
+          ign: ["YellOwStaR"],
           position: "BOT",
           nationality: "FR",
         },
         Steelback: {
-          ign: "Steelback",
+          ign: ["Steelback"],
           position: "BOT",
           nationality: "FR",
         },
         Rekkles: {
-          ign: "Rekkles",
+          ign: ["Rekkles"],
           position: "BOT",
           nationality: "SE",
         },
         Emperor: {
-          ign: "Emperor",
+          ign: ["Emperor"],
           position: "BOT",
           nationality: "KR",
         },
         Hjarnan: {
-          ign: "Hjarnan",
+          ign: ["Hjarnan"],
           position: "BOT",
           nationality: "SE",
         },
         Perkz: {
-          ign: "Perkz",
+          ign: ["Perkz"],
           position: "BOT",
           nationality: "HR",
+        },
+        CoreJJ: {
+          ign: ["CoreJJ"],
+          position: "BOT",
+          nationality: "KR",
+        },
+        Freeze: {
+          ign: ["Freeze"],
+          position: "BOT",
+          nationality: "CZ"
+        },
+        Apollo: {
+          ign: ["Apollo"],
+          position: "BOT",
+          nationality: "US",
+        },
+        FBI: {
+          ign: ["FBI"],
+          position: "BOT",
+          nationality: "AU",
+        },
+        CodySun: {
+          ign: ["CodySun"],
+          position: "BOT",
+          nationality: "CA",
+        },
+        Johnsun: {
+          ign: ["Johnsun"],
+          position: "BOT",
+          nationality: "CA",
+        },
+        Bang: {
+          ign: ["Bang"],
+          position: "BOT",
+          nationality: "KR",
+        },
+        Danny: {
+          ign: ["Danny"],
+          position: "BOT",
+          nationality: "US",
+        },
+        HosaN: {
+          ign: ["HosaN"],
+          position: "BOT",
+          nationality: "PL",
+        },
+        CandyPanda: {
+          ign: ["CandyPanda"],
+          position: "BOT",
+          nationality: "DE",
+        },
+        FORG1VEN: {
+          ign: ["FORG1VEN", "FORG1VENGRE"],
+          position: "BOT",
+          nationality: "GR",
+        },
+        P1noy: {
+          ign: ["P1noy"],
+          position: "BOT",
+          nationality: "DK",
+        },
+        Genja: {
+          ign: ["Genja", "Genja007"],
+          position: "BOT",
+          nationality: "RU",
+        },
+        MrRalleZ: {
+          ign: ["MrRalleZ"],
+          position: "BOT",
+          nationality: "DK",
+        },
+        Vardags: {
+          ign: ["Vardags"],
+          position: "BOT",
+          nationality: "SE",
+        },
+        Creaton: {
+          ign: ["Creaton"],
+          position: "BOT",
+          nationality: "PL",
+        },
+        Niels: {
+          ign: ["Niels"],
+          position: "BOT",
+          nationality: "DK",
+        },
+        Upset: {
+          ign: ["Upset"],
+          position: "BOT",
+          nationality: "DE",
+        },
+        HansSama: {
+          ign: ["Hans Sama"],
+          position: "BOT",
+          nationality: "FR",
+        },
+        Neon: {
+          ign: ["Neon"],
+          position: "BOT",
+          nationality: "SI",
         },
       },
       SPT: {
         Xpecial: {
-          ign: "Xpecial",
+          ign: ["Xpecial"],
           position: "SPT",
           nationality: "CA",
         },
         Lustboy: {
-          ign: "Lustboy",
+          ign: ["Lustboy"],
           position: "SPT",
           nationality: "KR",
         },
         Biofrost: {
-          ign: "Biofrost",
+          ign: ["Biofrost"],
           position: "SPT",
           nationality: "CA",
         },
         Mithy: {
-          ign: "Mithy",
+          ign: ["Mithy"],
           position: "SPT",
           nationality: "ES",
         },
         Treatz: {
-          ign: "Treatz",
+          ign: ["Treatz"],
           position: "SPT",
           nationality: "SE",
         },
         SwordArt: {
-          ign: "SwordArt",
+          ign: ["SwordArt"],
           position: "SPT",
           nationality: "TW",
         },
         CoreJJ: {
-          ign: "CoreJJ",
+          ign: ["CoreJJ"],
           position: "SPT",
           nationality: "KR",
         },
         Zeyzal: {
-          ign: "Zeyzal",
+          ign: ["Zeyzal"],
           position: "SPT",
           nationality: "US",
         },
         Vulcan: {
-          ign: "Vulcan",
+          ign: ["Vulcan"],
           position: "SPT",
           nationality: "CA",
         },
         NRated: {
-          ign: "NRated",
+          ign: ["nRated"],
           position: "SPT",
           nationality: "DE",
         },
         YellOwStaR: {
-          ign: "YellOwStaR",
+          ign: ["YellOwStaR"],
           position: "SPT",
           nationality: "FR",
         },
         Hylissang: {
-          ign: "Hylissang",
+          ign: ["Hylissang"],
           position: "SPT",
           nationality: "BG",
         },
         Hybrid: {
-          ign: "Hybrid",
+          ign: ["Hybrid"],
           position: "SPT",
           nationality: "NL",
         },
         Wadid: {
-          ign: "Wadid",
+          ign: ["Wadid"],
           position: "SPT",
           nationality: "KR",
         },
         Mikyx: {
-          ign: "Mikyx",
+          ign: ["Mikyx"],
           position: "SPT",
           nationality: "SI",
+        },
+        KiWiKiD: {
+          ign: ["KiWiKiD"],
+          position: "SPT",
+          nationality: "US",
+        },
+        Remilia: {
+          ign: ["Remi", "Remilia"],
+          position: "SPT",
+          nationality: "US",
+        },
+        Hakuho: {
+          ign: ["Hakuho"],
+          position: "SPT",
+          nationality: "US",
+        },
+        Huhi: {
+          ign: ["Huhi"],
+          position: "SPT",
+          nationality: "KR",
+        },
+        Olleh: {
+          ign: ["Olleh"],
+          position: "SPT",
+          nationality: "KR",
+        },
+        aphromoo: {
+          ign: ["aphromoo"],
+          position: "SPT",
+          nationality: "US",
+        },
+        Dreams: {
+          ign: ["Dreams"],
+          position: "SPT",
+          nationality: "KR",
+        },
+        IgNar: {
+          ign: ["IgNar"],
+          position: "SPT",
+          nationality: "KR",
+        },
+        Muvert: {
+          ign: ["Muvert"],
+          position: "SPT",
+          nationality: "SE",
+        },
+        Nyph: {
+          ign: ["Nyph"],
+          position: "SPT",
+          nationality: "DE",
+        },
+        Edward: {
+          ign: ["Edward"],
+          position: "SPT",
+          nationality: "AM",
+        },
+        Voidle: {
+          ign: ["Voidle"],
+          position: "SPT",
+          nationality: "EE",
+        },
+        kaSing: {
+          ign: ["kaSing"],
+          position: "SPT",
+          nationality: "GB",
+        },
+        Vander: {
+          ign: ["Vander"],
+          position: "SPT",
+          nationality: "PL",
+        },
+        Jree: {
+          ign: ["Jree"],
+          position: "SPT",
+          nationality: "SE",
+        },
+        Destiny: {
+          ign: ["Destiny"],
+          position: "SPT",
+          nationality: "AU",
         },
       },
     };
@@ -805,6 +1225,46 @@ var app = (function () {
         abbr: "C9",
         region: "NA",
       },
+      DIG: {
+        name: ["Dignitas"],
+        abbr: "DIG",
+        region: "NA",
+      },
+      REN: {
+        name: ["Renegades"],
+        abbr: "REN",
+        region: "NA",
+      },
+      NV: {
+        name: ["Envyus", "Team Envyus"],
+        abbr: "NV",
+        region: "NA"
+      },
+      '100': {
+        name: ["100T", "100 thieves"],
+        abbr: "100",
+        region: "NA",
+      },
+      IMT: {
+        name: ["Immortals"],
+        abbr: "IMT",
+        region: "NA",
+      },
+      CLG: {
+        name: ["Counter Logic Gaming"],
+        abbr: "CLG",
+        region: "NA",
+      },
+      FLY: {
+        name: ["Fly Quest"],
+        abbr: "FLY",
+        region: "NA",
+      },
+      EG: {
+        name: ["Evil Geniuses"],
+        abbr: "EG",
+        region: "NA",
+      },
       FNC: {
         name: ["Fnatic"],
         abbr: "FNC",
@@ -813,6 +1273,56 @@ var app = (function () {
       G2: {
         name: ["G2 Esports"],
         abbr: "G2",
+        region: "EU",
+      },
+      DB: {
+        name: ["DragonBorns"],
+        abbr: "DB",
+        region: "EU",
+      },
+      SK: {
+        name: ["SK Gaming"],
+        abbr: "SK",
+        region: "EU",
+      },
+      GMB: {
+        name: ["Gambit", "Gambit Gaming"],
+        abbr: "GMB",
+        region: "EU",
+      },
+      SHC: {
+        name: ["Supa Hot Crew"],
+        abbr: "SHC",
+        region: "EU",
+      },
+      H2K: {
+        name: ["H2K Gaming"],
+        abbr: "H2K",
+        region: "EU",
+      },
+      UOL: {
+        name: ["Unicorns of Love"],
+        abbr: "UOL",
+        region: "EU",
+      },
+      ATN: {
+        name: ["Team ALTERNATE", "ALTERNATE"],
+        abbr: "ATN",
+        region: "EU",
+      },
+      OG: {
+        name: ["Origen"],
+        abbr: "OG",
+        region: "EU",
+      },
+      MSF: {
+        name: ["Misfits", "Misfits Gaming"],
+        abbr: "MSF",
+        region: "EU",
+      },
+      S04: {
+        name: ["Schalke", "Schalke 04"],
+        abbr: "S04",
         region: "EU",
       },
     };
@@ -833,32 +1343,6 @@ var app = (function () {
       },
       {
         team: teams.TSM,
-        year: "2013",
-        split: "summer",
-        region: "NA",
-        players: {
-          TOP: players.TOP.Dyrus,
-          JG: players.JG.TheOddOne,
-          MID: players.MID.Reginald,
-          BOT: players.BOT.WildTurtle,
-          SPT: players.SPT.Xpecial,
-        },
-      },
-      {
-        team: teams.TSM,
-        year: "2014",
-        split: "spring",
-        region: "NA",
-        players: {
-          TOP: players.TOP.Dyrus,
-          JG: players.JG.TheOddOne,
-          MID: players.MID.Bjergsen,
-          BOT: players.BOT.WildTurtle,
-          SPT: players.SPT.Xpecial,
-        },
-      },
-      {
-        team: teams.TSM,
         year: "2014",
         split: "summer",
         region: "NA",
@@ -873,27 +1357,14 @@ var app = (function () {
       {
         team: teams.TSM,
         year: "2016",
-        split: "summer",
+        split: "spring",
         region: "NA",
         players: {
           TOP: players.TOP.Hauntzer,
           JG: players.JG.Svenskeren,
           MID: players.MID.Bjergsen,
           BOT: players.BOT.Doublelift,
-          SPT: players.SPT.Biofrost,
-        },
-      },
-      {
-        team: teams.TSM,
-        year: "2018",
-        split: "summer",
-        region: "NA",
-        players: {
-          TOP: players.TOP.BrokenBlade,
-          JG: players.JG.Grig,
-          MID: players.MID.Bjergsen,
-          BOT: players.BOT.Zven,
-          SPT: players.SPT.Mithy,
+          SPT: players.SPT.YellOwStaR,
         },
       },
       {
@@ -921,6 +1392,19 @@ var app = (function () {
           BOT: players.BOT.Lost,
           SPT: players.SPT.SwordArt,
         },
+      },
+      {
+        team: teams.DIG,
+        year: "2015",
+        split: "spring",
+        region: "NA",
+        players: {
+          TOP: players.TOP.Gamsu,
+          JG: players.JG.Crumbz,
+          MID: players.MID.Shiphtur,
+          BOT: players.BOT.CoreJJ,
+          SPT: players.SPT.KiWiKiD,
+        }
       },
       {
         team: teams.TL,
@@ -972,6 +1456,136 @@ var app = (function () {
           MID: players.MID.Perkz,
           BOT: players.BOT.Zven,
           SPT: players.SPT.Vulcan,
+        },
+      },
+      {
+        team: teams.FLY,
+        year: "2020",
+        split: "spring",
+        region: "NA",
+        players: {
+          TOP: players.TOP.Solo,
+          JG: players.JG.Santorin,
+          MID: players.MID.PowerOfEvil,
+          BOT: players.BOT.WildTurtle,
+          SPT: players.SPT.IgNar,
+        },
+      },
+      {
+        team: teams.FLY,
+        year: "2021",
+        split: "spring",
+        region: "NA",
+        players: {
+          TOP: players.TOP.Licorice,
+          JG: players.JG.Josedeodo,
+          MID: players.MID.Palafox,
+          BOT: players.BOT.Johnsun,
+          SPT: players.SPT.Dreams,
+        },
+      },
+      {
+        team: teams.REN,
+        year: "2016",
+        split: "spring",
+        region: "NA",
+        players: {
+          TOP: players.TOP.RFLegendary,
+          JG: players.JG.Crumbz,
+          MID: players.MID.AlexIch,
+          BOT: players.BOT.Freeze,
+          SPT: players.SPT.Remilia,
+        },
+      },
+      {
+        team: teams.NV,
+        year: "2017",
+        split: "spring",
+        region: "NA",
+        players: {
+          TOP: players.TOP.Seraph,
+          JG: players.JG.Lira,
+          MID: players.MID.Nisqy,
+          BOT: players.BOT.Apollo,
+          SPT: players.SPT.Hakuho,
+        },
+      },
+      {
+        team: teams.IMT,
+        year: "2017",
+        split: "summer",
+        region: "NA",
+        players: {
+          TOP: players.TOP.Flame,
+          JG: players.JG.Xmithie,
+          MID: players.MID.Pobelter,
+          BOT: players.BOT.CodySun,
+          SPT: players.SPT.Olleh,
+        },
+      },
+      {
+        team: teams.IMT,
+        year: "2020",
+        split: "spring",
+        region: "NA",
+        players: {
+          TOP: players.TOP.sOAZ,
+          JG: players.JG.Xmithie,
+          MID: players.MID.Eika,
+          BOT: players.BOT.Apollo,
+          SPT: players.SPT.Hakuho,
+        },
+      },
+      {
+        team: teams['100'],
+        year: "2019",
+        split: "summer",
+        region: "NA",
+        players: {
+          TOP: players.TOP.FakeGod,
+          JG: players.JG.Amazing,
+          MID: players.MID.Ryu,
+          BOT: players.BOT.Bang,
+          SPT: players.SPT.aphromoo,
+        },
+      },
+      {
+        team: teams['100'],
+        year: "2021",
+        split: "spring",
+        region: "NA",
+        players: {
+          TOP: players.TOP.SSumday,
+          JG: players.JG.Closer,
+          MID: players.MID.Ry0ma,
+          BOT: players.BOT.FBI,
+          SPT: players.SPT.Huhi,
+        },
+      },
+      {
+        team: teams.CLG,
+        year: "2014",
+        split: "summer",
+        region: "NA",
+        players: {
+          TOP: players.TOP.Seraph,
+          JG: players.JG.Dexter,
+          MID: players.MID.Link,
+          BOT: players.BOT.Doublelift,
+          SPT: players.SPT.aphromoo,
+        },
+      },
+      {
+        team: teams.EG,
+        year: "2021",
+        split: "summer",
+        region: "NA",
+        players: {
+          TOP: players.TOP.Impact,
+          JG: players.JG.Svenskeren,
+          MID: players.MID.Jiizuke,
+          BOT: players.BOT.Danny,
+          SPT: players.SPT.IgNar,
         },
       },
       {
@@ -1063,6 +1677,175 @@ var app = (function () {
           MID: players.MID.Caps,
           BOT: players.BOT.Perkz,
           SPT: players.SPT.Mikyx,
+        },
+      },
+      {
+        team: teams.DB,
+        year: "2013",
+        split: "spring",
+        region: "EU",
+        players: {
+          TOP: players.TOP.Spontexx,
+          JG: players.JG.Malunoo,
+          MID: players.MID.Shushei,
+          BOT: players.BOT.HosaN,
+          SPT: players.SPT.Muvert,
+        },
+      },
+      {
+        team: teams.SK,
+        year: "2013",
+        split: "spring",
+        region: "EU",
+        players: {
+          TOP: players.TOP.Kev1n,
+          JG: players.JG.HyrqBot,
+          MID: players.MID.Ocelote,
+          BOT: players.BOT.CandyPanda,
+          SPT: players.SPT.Nyph,
+        },
+      },
+      {
+        team: teams.SK,
+        year: "2015",
+        split: "spring",
+        region: "EU",
+        players: {
+          TOP: players.TOP.fredy122,
+          JG: players.JG.Svenskeren,
+          MID: players.MID.Fox,
+          BOT: players.BOT.FORG1VEN,
+          SPT: players.SPT.NRated,
+        },
+      },
+      {
+        team: teams.GMB,
+        year: "2013",
+        split: "summer",
+        region: "EU",
+        players: {
+          TOP: players.TOP.Darien,
+          JG: players.JG.Diamondprox,
+          MID: players.MID.AlexIch,
+          BOT: players.BOT.Genja,
+          SPT: players.SPT.Voidle,
+        },
+      },
+      {
+        team: teams.GMB,
+        year: "2015",
+        split: "spring",
+        region: "EU",
+        players: {
+          TOP: players.TOP.Cabochard,
+          JG: players.JG.Diamondprox,
+          MID: players.MID.NiQ,
+          BOT: players.BOT.P1noy,
+          SPT: players.SPT.Edward,
+        },
+      },
+      {
+        team: teams.SHC,
+        year: "2014",
+        split: "summer",
+        region: "EU",
+        players: {
+          TOP: players.TOP.Mimer,
+          JG: players.JG.Impaler,
+          MID: players.MID.Selfie,
+          BOT: players.BOT.MrRalleZ,
+          SPT: players.SPT.kaSing,
+        },
+      },
+      {
+        team: teams.H2K,
+        year: "2016",
+        split: "spring",
+        region: "EU",
+        players: {
+          TOP: players.TOP.Odoamne,
+          JG: players.JG.Jankos,
+          MID: players.MID.Ryu,
+          BOT: players.BOT.FORG1VEN,
+          SPT: players.SPT.Vander,
+        },
+      },
+      {
+        team: teams.UOL,
+        year: "2015",
+        split: "spring",
+        region: "EU",
+        players: {
+          TOP: players.TOP.Vizicsasci,
+          JG: players.JG.Kikis,
+          MID: players.MID.PowerOfEvil,
+          BOT: players.BOT.Vardags,
+          SPT: players.SPT.Hylissang,
+        },
+      },
+      {
+        team: teams.OG,
+        year: "2015",
+        split: "summer",
+        region: "EU",
+        players: {
+          TOP: players.TOP.sOAZ,
+          JG: players.JG.Amazing,
+          MID: players.MID.XPeke,
+          BOT: players.BOT.Niels,
+          SPT: players.SPT.Mithy,
+        },
+      },
+      {
+        team: teams.OG,
+        year: "2020",
+        split: "spring",
+        region: "EU",
+        players: {
+          TOP: players.TOP.Alphari,
+          JG: players.JG.Xerxe,
+          MID: players.MID.Nukeduck,
+          BOT: players.BOT.Upset,
+          SPT: players.SPT.Destiny,
+        },
+      },
+      {
+        team: teams.MSF,
+        year: "2017",
+        split: "summer",
+        region: "EU",
+        players: {
+          TOP: players.TOP.Alphari,
+          JG: players.JG.Maxlore,
+          MID: players.MID.PowerOfEvil,
+          BOT: players.BOT.HansSama,
+          SPT: players.SPT.IgNar,
+        },
+      },
+      {
+        team: teams.S04,
+        year: "2018",
+        split: "summer",
+        region: "EU",
+        players: {
+          TOP: players.TOP.Vizicsasci,
+          JG: players.JG.Amazing,
+          MID: players.MID.Nukeduck,
+          BOT: players.BOT.Upset,
+          SPT: players.SPT.Vander,
+        },
+      },
+      {
+        team: teams.S04,
+        year: "2020",
+        split: "summer",
+        region: "EU",
+        players: {
+          TOP: players.TOP.Odoamne,
+          JG: players.JG.Gilius,
+          MID: players.MID.Abbedagge,
+          BOT: players.BOT.Neon,
+          SPT: players.SPT.Dreams,
         },
       },
     ];
@@ -1182,7 +1965,7 @@ var app = (function () {
     	answer = new Answer({
     			props: {
     				question: positionNameMap[/*player*/ ctx[0].position.toLowerCase()],
-    				answer: /*player*/ ctx[0].ign,
+    				answer: /*player*/ ctx[0].ign[0],
     				isCurrentAnswering: /*isCurrentAnswering*/ ctx[1],
     				isCorrect: /*isCorrect*/ ctx[2]
     			}
@@ -1217,7 +2000,7 @@ var app = (function () {
 
     			const answer_changes = {};
     			if (dirty & /*player*/ 1) answer_changes.question = positionNameMap[/*player*/ ctx[0].position.toLowerCase()];
-    			if (dirty & /*player*/ 1) answer_changes.answer = /*player*/ ctx[0].ign;
+    			if (dirty & /*player*/ 1) answer_changes.answer = /*player*/ ctx[0].ign[0];
     			if (dirty & /*isCurrentAnswering*/ 2) answer_changes.isCurrentAnswering = /*isCurrentAnswering*/ ctx[1];
     			if (dirty & /*isCorrect*/ 4) answer_changes.isCorrect = /*isCorrect*/ ctx[2];
     			answer.$set(answer_changes);
@@ -1920,6 +2703,13 @@ var app = (function () {
     	}
     }
 
+    const generalizeName = (rawName) => {
+      if (!rawName) {
+        return '';
+      }
+      return rawName.replace(' ', '').toLowerCase();  
+    };
+
     /* src/components/Quiz.svelte generated by Svelte v3.38.3 */
 
     function add_css$4() {
@@ -1929,7 +2719,7 @@ var app = (function () {
     	append(document.head, style);
     }
 
-    // (87:2) {#if quiz}
+    // (95:2) {#if quiz}
     function create_if_block(ctx) {
     	let div0;
     	let player0;
@@ -2281,14 +3071,24 @@ var app = (function () {
     		quizNo = pool[Math.floor(Math.random() * pool.length)];
     		answeredPool.push(quizNo);
     		$$invalidate(0, quiz = data[quizNo]);
-    		$$invalidate(1, answerForm.team.answer = [...quiz.team.name.map(n => n.toLowerCase()), quiz.team.abbr.toLowerCase()], answerForm);
+    		console.log(quiz);
+
+    		$$invalidate(
+    			1,
+    			answerForm.team.answer = [
+    				...quiz.team.name.map(name => generalizeName(name)),
+    				quiz.team.abbr.toLowerCase()
+    			],
+    			answerForm
+    		);
+
     		$$invalidate(1, answerForm.year.answer = quiz.year, answerForm);
     		$$invalidate(1, answerForm.split.answer = quiz.split.toLowerCase(), answerForm);
-    		$$invalidate(1, answerForm.top.answer = quiz.players.TOP.ign.toLowerCase(), answerForm);
-    		$$invalidate(1, answerForm.jungle.answer = quiz.players.JG.ign.toLowerCase(), answerForm);
-    		$$invalidate(1, answerForm.mid.answer = quiz.players.MID.ign.toLowerCase(), answerForm);
-    		$$invalidate(1, answerForm.bot.answer = quiz.players.BOT.ign.toLowerCase(), answerForm);
-    		$$invalidate(1, answerForm.support.answer = quiz.players.SPT.ign.toLowerCase(), answerForm);
+    		$$invalidate(1, answerForm.top.answer = [...quiz.players.TOP.ign.map(name => generalizeName(name))], answerForm);
+    		$$invalidate(1, answerForm.jungle.answer = [...quiz.players.JG.ign.map(name => generalizeName(name))], answerForm);
+    		$$invalidate(1, answerForm.mid.answer = [...quiz.players.MID.ign.map(name => generalizeName(name))], answerForm);
+    		$$invalidate(1, answerForm.bot.answer = [...quiz.players.BOT.ign.map(name => generalizeName(name))], answerForm);
+    		$$invalidate(1, answerForm.support.answer = [...quiz.players.SPT.ign.map(name => generalizeName(name))], answerForm);
     	}
 
     	function handleInputChance(key, value) {
@@ -2296,7 +3096,7 @@ var app = (function () {
     	}
 
     	function handleInputEnter(key) {
-    		if (key === "team" && answerForm.team.answer.includes(answerForm[key].value.toLowerCase()) || key !== "team" && answerForm[key].answer === answerForm[key].value.toLowerCase()) {
+    		if (key === "team" && answerForm.team.answer.includes(generalizeName(answerForm[key].value)) || key === "top" && answerForm.top.answer.includes(generalizeName(answerForm[key].value)) || key === "jungle" && answerForm.jungle.answer.includes(generalizeName(answerForm[key].value)) || key === "mid" && answerForm.mid.answer.includes(generalizeName(answerForm[key].value)) || key === "bot" && answerForm.bot.answer.includes(generalizeName(answerForm[key].value)) || key === "support" && answerForm.support.answer.includes(generalizeName(answerForm[key].value)) || key === "year" && answerForm[key].answer === generalizeName(answerForm[key].value) || key === "split" && answerForm[key].answer === generalizeName(answerForm[key].value)) {
     			$$invalidate(3, isPrevQCorrect = true);
     			$$invalidate(1, answerForm[key].correct = true, answerForm);
     			qs.shift();
