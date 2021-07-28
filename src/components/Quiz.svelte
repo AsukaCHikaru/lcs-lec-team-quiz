@@ -82,7 +82,7 @@
     }
   }
 
-  function handleSkipClick () {
+  function handleNextQuizClick () {
     answerForm.team.correct = true;
     answerForm.year.correct = true;
     answerForm.top.correct = true;
@@ -94,6 +94,22 @@
       createQuiz();
       clearTimeout(newQuizTimeout);
     }, 2000);
+  }
+
+  function handleSkipPartClick () {
+    answerForm[currentQ].correct = true;
+    qs.shift();
+    if (qs.length === 0) {
+      const newQuizTimeout = setTimeout(() => {
+        createQuiz();
+        qs = [...Object.keys(defaultAnswerForm)];
+        currentQ = qs[0];
+        clearTimeout(newQuizTimeout);
+      }, 1000);
+    }
+    else {
+      currentQ = qs[0];
+    }
   }
 
   onMount(() => {
@@ -160,7 +176,10 @@
       />
     </div>
   {/if}
-  <SkipButton onClick={handleSkipClick} />
+  <div class="button-container">
+    <SkipButton onClick={handleNextQuizClick} type="quiz"/>
+    <SkipButton onClick={handleSkipPartClick} type="part" />
+  </div>
 </div>
 
 <style>
@@ -185,5 +204,8 @@
   }
   .input-container {
     text-align: center;
+  }
+  .button-container {
+    display: flex;
   }
 </style>

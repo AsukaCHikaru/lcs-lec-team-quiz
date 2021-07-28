@@ -1,5 +1,6 @@
 <script>
   export let onClick;
+  export let type;
 
   function handleButtonClick () {
     onClick();
@@ -7,13 +8,13 @@
 </script>
 
 <div class="wrapper">
-  <button on:click={handleButtonClick}>Skip</button>
+  <button on:click={handleButtonClick}>{type === 'quiz' ? 'NEXT QUIZ' : 'SKIP PART'}</button>
 </div>
 
 <style>
   .wrapper {
-    margin: 24px 0;
-    width: 96px;
+    margin: 24px;
+    width: 192px;
   }
   button {
     width: 100%;
@@ -26,7 +27,8 @@
 
   @media (max-width: 799px) {
     .wrapper {
-      margin: 12px 0;
+      margin: 12px;
+      width: 96px;
     }
 
     button {
@@ -36,8 +38,8 @@
 
   @media (max-width: 320px) {
     .wrapper {
-      margin: 12px 0;
-      width: 48px;
+      margin: 12px;
+      width: 72px;
     }
 
     button {
