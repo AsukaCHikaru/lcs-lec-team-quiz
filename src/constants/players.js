@@ -437,7 +437,7 @@ export const players = {
       nationality: "US",
     },
     Zven: {
-      ign: ["Zven"],
+      ign: ["Zven", "Niels"],
       position: "BOT",
       nationality: "DK",
     },
@@ -565,11 +565,6 @@ export const players = {
       ign: ["Creaton"],
       position: "BOT",
       nationality: "PL",
-    },
-    Niels: {
-      ign: ["Niels"],
-      position: "BOT",
-      nationality: "DK",
     },
     Upset: {
       ign: ["Upset"],
