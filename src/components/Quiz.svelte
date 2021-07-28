@@ -29,6 +29,7 @@
   let qs = [...Object.keys(defaultAnswerForm)];
 
   function resetAnswerForm () {
+    currentQ = 'team';
     answerForm = JSON.parse(JSON.stringify(defaultAnswerForm));
   }
 
@@ -39,7 +40,6 @@
     quizNo = pool[Math.floor(Math.random() * pool.length)];
     answeredPool.push(quizNo);
     quiz = data[quizNo];
-    console.log(quiz);
 
     answerForm.team.answer = [...quiz.team.name.map(name => generalizeName(name)), quiz.team.abbr.toLowerCase()];
     answerForm.year.answer = quiz.year;
@@ -83,6 +83,21 @@
     } else {
       isPrevQCorrect = false;
     }
+  }
+
+  function handleSkipClick () {
+    answerForm.team.correct = true;
+    answerForm.year.correct = true;
+    answerForm.split.correct = true;
+    answerForm.top.correct = true;
+    answerForm.jungle.correct = true;
+    answerForm.mid.correct = true;
+    answerForm.bot.correct = true;
+    answerForm.support.correct = true;
+    const newQuizTimeout = setTimeout(() => {
+      createQuiz();
+      clearTimeout(newQuizTimeout);
+    }, 2000);
   }
 
   onMount(() => {
@@ -155,7 +170,7 @@
       />
     </div>
   {/if}
-  <SkipButton onClick={createQuiz} />
+  <SkipButton onClick={handleSkipClick} />
 </div>
 
 <style>
@@ -177,10 +192,6 @@
     justify-content: space-between;
     text-align: center;
     width: 60%;
-  }
-  .team-q-wrapper {
-    width: 100px;
-    margin: 10px 20px;
   }
   .input-container {
     text-align: center;
