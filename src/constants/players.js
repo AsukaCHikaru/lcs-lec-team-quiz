@@ -66,7 +66,7 @@ export const players = {
       nationality: "KR",
     },
     RFLegendary: {
-      ign: ["RF", "RFLegendary"],
+      ign: ["RFLegendary", "RFLegendary"],
       position: "TOP",
       nationality: "UA",
     },
@@ -139,6 +139,16 @@ export const players = {
       ign: ["Kerp"],
       position: "TOP",
       nationality: "DE",
+    },
+    Overpow: {
+      ign: ["Overpow"],
+      position: "TOP",
+      nationality: "PL",
+    },
+    Armut: {
+      ign: ["Armut"],
+      position: "TOP",
+      nationality: "TR",
     },
   },
   JG: {
@@ -282,6 +292,16 @@ export const players = {
       position: "JG",
       nationality: "TR",
     },
+    Inspired: {
+      ign: ["Inspired"],
+      position: "JG",
+      nationality: "PL",
+    },
+    Elyoya: {
+      ign: ["Elyoya"],
+      position: "JG",
+      nationality: "ES",
+    },
   },
   MID: {
     Reginald: {
@@ -419,6 +439,16 @@ export const players = {
       position: "MID",
       nationality: "DE",
     },
+    Larssen: {
+      ign: ["Larssen"],
+      position: "MID",
+      nationality: "SE",
+    },
+    Humanoid: {
+      ign: ["Humanoid"],
+      position: "MID",
+      nationality: "CZ",
+    },
   },
   BOT: {
     Chaox: {
@@ -547,7 +577,7 @@ export const players = {
       nationality: "DK",
     },
     Genja: {
-      ign: ["Genja", "Genja007"],
+      ign: ["Genja007", "Genja"],
       position: "BOT",
       nationality: "RU",
     },
@@ -580,6 +610,21 @@ export const players = {
       ign: ["Neon"],
       position: "BOT",
       nationality: "SI",
+    },
+    Woolite: {
+      ign: ["Woolite"],
+      position: "BOT",
+      nationality: "PL",
+    },
+    Carzzy: {
+      ign: ["Carzzy"],
+      position: "BOT",
+      nationality: "CZ",
+    },
+    Attila: {
+      ign: ["Attila"],
+      position: "BOT",
+      nationality: "PT",
     },
   },
   SPT: {
@@ -664,7 +709,7 @@ export const players = {
       nationality: "US",
     },
     Remilia: {
-      ign: ["Remi", "Remilia"],
+      ign: ["Remilia", "Remi"],
       position: "SPT",
       nationality: "US",
     },
@@ -737,6 +782,21 @@ export const players = {
       ign: ["Destiny"],
       position: "SPT",
       nationality: "AU",
+    },
+    Trymbi: {
+      ign: ["Trymbi"],
+      position: "SPT",
+      nationality: "PL",
+    },
+    Kaiser: {
+      ign: ["Kaiser"],
+      position: "SPT",
+      nationality: "DE",
+    },
+    Jactroll: {
+      ign: ["Jactroll"],
+      position: "SPT",
+      nationality: "PL",
     },
   },
 };

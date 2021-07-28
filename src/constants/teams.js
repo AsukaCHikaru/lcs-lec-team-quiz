@@ -114,4 +114,24 @@ export const teams = {
     abbr: "S04",
     region: "EU",
   },
+  ROC: {
+    name: ["Roccat"],
+    abbr: "ROC",
+    region: "EU",
+  },
+  RGE: {
+    name: ["Rogue"],
+    abbr: "RGE",
+    region: "EU",
+  },
+  MAD: {
+    name: ["Mad Lions"],
+    abbr: "MAD",
+    region: "EU",
+  },
+  VIT: {
+    name: ["Team Vitality", "Vitality"],
+    abbr: "VIT",
+    region: "EU",
+  },
 }
