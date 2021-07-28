@@ -3,7 +3,7 @@
   <ul class="rules-ul">
     <li>NALCS, LCS, EULCS, LEC teams, excluding academy.</li>
     <li>From 2013 spring to 2021 summer.</li>
-    <li>For players with changed IGNs, all IGNs are eligible.</li>
+    <li>For players with changed competitive IGNs, all IGNs are eligible.</li>
     <li>Data is based on <a href="https://lol.fandom.com/wiki/League_of_Legends_Esports_Wiki" rel="noreferrer noopener" target="_blank">Leaguepedia</a>.</li>
     <li>Exclusive answer for every quiz. If there are invalid quizzes (eg. multiple answers), I'm sorry :p</li>
   </ul>
