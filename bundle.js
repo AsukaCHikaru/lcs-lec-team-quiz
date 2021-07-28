@@ -529,7 +529,7 @@ var app = (function () {
           nationality: "KR",
         },
         RFLegendary: {
-          ign: ["RF", "RFLegendary"],
+          ign: ["RFLegendary", "RFLegendary"],
           position: "TOP",
           nationality: "UA",
         },
@@ -602,6 +602,16 @@ var app = (function () {
           ign: ["Kerp"],
           position: "TOP",
           nationality: "DE",
+        },
+        Overpow: {
+          ign: ["Overpow"],
+          position: "TOP",
+          nationality: "PL",
+        },
+        Armut: {
+          ign: ["Armut"],
+          position: "TOP",
+          nationality: "TR",
         },
       },
       JG: {
@@ -745,6 +755,16 @@ var app = (function () {
           position: "JG",
           nationality: "TR",
         },
+        Inspired: {
+          ign: ["Inspired"],
+          position: "JG",
+          nationality: "PL",
+        },
+        Elyoya: {
+          ign: ["Elyoya"],
+          position: "JG",
+          nationality: "ES",
+        },
       },
       MID: {
         Reginald: {
@@ -882,6 +902,16 @@ var app = (function () {
           position: "MID",
           nationality: "DE",
         },
+        Larssen: {
+          ign: ["Larssen"],
+          position: "MID",
+          nationality: "SE",
+        },
+        Humanoid: {
+          ign: ["Humanoid"],
+          position: "MID",
+          nationality: "CZ",
+        },
       },
       BOT: {
         Chaox: {
@@ -1010,7 +1040,7 @@ var app = (function () {
           nationality: "DK",
         },
         Genja: {
-          ign: ["Genja", "Genja007"],
+          ign: ["Genja007", "Genja"],
           position: "BOT",
           nationality: "RU",
         },
@@ -1043,6 +1073,21 @@ var app = (function () {
           ign: ["Neon"],
           position: "BOT",
           nationality: "SI",
+        },
+        Woolite: {
+          ign: ["Woolite"],
+          position: "BOT",
+          nationality: "PL",
+        },
+        Carzzy: {
+          ign: ["Carzzy"],
+          position: "BOT",
+          nationality: "CZ",
+        },
+        Attila: {
+          ign: ["Attila"],
+          position: "BOT",
+          nationality: "PT",
         },
       },
       SPT: {
@@ -1127,7 +1172,7 @@ var app = (function () {
           nationality: "US",
         },
         Remilia: {
-          ign: ["Remi", "Remilia"],
+          ign: ["Remilia", "Remi"],
           position: "SPT",
           nationality: "US",
         },
@@ -1200,6 +1245,21 @@ var app = (function () {
           ign: ["Destiny"],
           position: "SPT",
           nationality: "AU",
+        },
+        Trymbi: {
+          ign: ["Trymbi"],
+          position: "SPT",
+          nationality: "PL",
+        },
+        Kaiser: {
+          ign: ["Kaiser"],
+          position: "SPT",
+          nationality: "DE",
+        },
+        Jactroll: {
+          ign: ["Jactroll"],
+          position: "SPT",
+          nationality: "PL",
         },
       },
     };
@@ -1318,6 +1378,26 @@ var app = (function () {
       S04: {
         name: ["Schalke", "Schalke 04"],
         abbr: "S04",
+        region: "EU",
+      },
+      ROC: {
+        name: ["Roccat"],
+        abbr: "ROC",
+        region: "EU",
+      },
+      RGE: {
+        name: ["Rogue"],
+        abbr: "RGE",
+        region: "EU",
+      },
+      MAD: {
+        name: ["Mad Lions"],
+        abbr: "MAD",
+        region: "EU",
+      },
+      VIT: {
+        name: ["Team Vitality", "Vitality"],
+        abbr: "VIT",
         region: "EU",
       },
     };
@@ -1568,19 +1648,6 @@ var app = (function () {
           MID: players.MID.Link,
           BOT: players.BOT.Doublelift,
           SPT: players.SPT.aphromoo,
-        },
-      },
-      {
-        team: teams.EG,
-        year: "2021",
-        split: "summer",
-        region: "NA",
-        players: {
-          TOP: players.TOP.Impact,
-          JG: players.JG.Svenskeren,
-          MID: players.MID.Jiizuke,
-          BOT: players.BOT.Danny,
-          SPT: players.SPT.IgNar,
         },
       },
       {
@@ -1841,6 +1908,58 @@ var app = (function () {
           MID: players.MID.Abbedagge,
           BOT: players.BOT.Neon,
           SPT: players.SPT.Dreams,
+        },
+      },
+      {
+        team: teams.ROC,
+        year: "2015",
+        split: "spring",
+        region: "EU",
+        players: {
+          TOP: players.TOP.Overpow,
+          JG: players.JG.Jankos,
+          MID: players.MID.Nukeduck,
+          BOT: players.BOT.Woolite,
+          SPT: players.SPT.Vander,
+        },
+      },
+      {
+        team: teams.RGE,
+        year: "2021",
+        split: "spring",
+        region: "EU",
+        players: {
+          TOP: players.TOP.Odoamne,
+          JG: players.JG.Inspired,
+          MID: players.MID.Larssen,
+          BOT: players.BOT.HansSama,
+          SPT: players.SPT.Trymbi,
+        },
+      },
+      {
+        team: teams.MAD,
+        year: "2021",
+        split: "spring",
+        region: "EU",
+        players: {
+          TOP: players.TOP.Armut,
+          JG: players.JG.Elyoya,
+          MID: players.MID.Humanoid,
+          BOT: players.BOT.Carzzy,
+          SPT: players.SPT.Kaiser,
+        },
+      },
+      {
+        team: teams.VIT,
+        year: "2018",
+        split: "summer",
+        region: "EU",
+        players: {
+          TOP: players.TOP.Cabochard,
+          JG: players.JG.Kikis,
+          MID: players.MID.Jiizuke,
+          BOT: players.BOT.Attila,
+          SPT: players.SPT.Jactroll,
         },
       },
     ];
@@ -2637,14 +2756,16 @@ var app = (function () {
 
     function add_css$5() {
     	var style = element("style");
-    	style.id = "svelte-q1fj1v-style";
-    	style.textContent = ".wrapper.svelte-q1fj1v{margin:24px 0;width:96px}button.svelte-q1fj1v{width:100%;background-color:#efefef;border:none;font-family:'Helvetica Neue', Arial, sans-serif;font-weight:200;font-size:24px}@media(max-width: 799px){.wrapper.svelte-q1fj1v{margin:12px 0}button.svelte-q1fj1v{font-size:16px}}@media(max-width: 320px){.wrapper.svelte-q1fj1v{margin:12px 0;width:48px}button.svelte-q1fj1v{font-size:12px}}";
+    	style.id = "svelte-1a2rrgr-style";
+    	style.textContent = ".wrapper.svelte-1a2rrgr{margin:24px;width:192px}button.svelte-1a2rrgr{width:100%;background-color:#efefef;border:none;font-family:'Helvetica Neue', Arial, sans-serif;font-weight:200;font-size:24px}@media(max-width: 799px){.wrapper.svelte-1a2rrgr{margin:12px;width:96px}button.svelte-1a2rrgr{font-size:16px}}@media(max-width: 320px){.wrapper.svelte-1a2rrgr{margin:12px;width:72px}button.svelte-1a2rrgr{font-size:12px}}";
     	append(document.head, style);
     }
 
     function create_fragment$5(ctx) {
     	let div;
     	let button;
+    	let t_value = (/*type*/ ctx[0] === "quiz" ? "NEXT QUIZ" : "SKIP PART") + "";
+    	let t;
     	let mounted;
     	let dispose;
 
@@ -2652,20 +2773,23 @@ var app = (function () {
     		c() {
     			div = element("div");
     			button = element("button");
-    			button.textContent = "Skip";
-    			attr(button, "class", "svelte-q1fj1v");
-    			attr(div, "class", "wrapper svelte-q1fj1v");
+    			t = text(t_value);
+    			attr(button, "class", "svelte-1a2rrgr");
+    			attr(div, "class", "wrapper svelte-1a2rrgr");
     		},
     		m(target, anchor) {
     			insert(target, div, anchor);
     			append(div, button);
+    			append(button, t);
 
     			if (!mounted) {
-    				dispose = listen(button, "click", /*handleButtonClick*/ ctx[0]);
+    				dispose = listen(button, "click", /*handleButtonClick*/ ctx[1]);
     				mounted = true;
     			}
     		},
-    		p: noop,
+    		p(ctx, [dirty]) {
+    			if (dirty & /*type*/ 1 && t_value !== (t_value = (/*type*/ ctx[0] === "quiz" ? "NEXT QUIZ" : "SKIP PART") + "")) set_data(t, t_value);
+    		},
     		i: noop,
     		o: noop,
     		d(detaching) {
@@ -2678,23 +2802,25 @@ var app = (function () {
 
     function instance$1($$self, $$props, $$invalidate) {
     	let { onClick } = $$props;
+    	let { type } = $$props;
 
     	function handleButtonClick() {
     		onClick();
     	}
 
     	$$self.$$set = $$props => {
-    		if ("onClick" in $$props) $$invalidate(1, onClick = $$props.onClick);
+    		if ("onClick" in $$props) $$invalidate(2, onClick = $$props.onClick);
+    		if ("type" in $$props) $$invalidate(0, type = $$props.type);
     	};
 
-    	return [handleButtonClick, onClick];
+    	return [type, handleButtonClick, onClick];
     }
 
     class SkipButton extends SvelteComponent {
     	constructor(options) {
     		super();
-    		if (!document.getElementById("svelte-q1fj1v-style")) add_css$5();
-    		init(this, options, instance$1, create_fragment$5, safe_not_equal, { onClick: 1 });
+    		if (!document.getElementById("svelte-1a2rrgr-style")) add_css$5();
+    		init(this, options, instance$1, create_fragment$5, safe_not_equal, { onClick: 2, type: 0 });
     	}
     }
 
@@ -2709,12 +2835,12 @@ var app = (function () {
 
     function add_css$4() {
     	var style = element("style");
-    	style.id = "svelte-qgjng3-style";
-    	style.textContent = ".quiz-container.svelte-qgjng3{display:flex;flex-direction:column;justify-content:space-between;align-items:center;width:100%}.player-container.svelte-qgjng3{display:flex;flex-direction:row;justify-content:space-between;width:100%}.team-answer-container.svelte-qgjng3{display:flex;justify-content:space-between;text-align:center;width:60%}.input-container.svelte-qgjng3{text-align:center}";
+    	style.id = "svelte-1c4shob-style";
+    	style.textContent = ".quiz-container.svelte-1c4shob{display:flex;flex-direction:column;justify-content:space-between;align-items:center;width:100%}.player-container.svelte-1c4shob{display:flex;flex-direction:row;justify-content:space-between;width:100%}.team-answer-container.svelte-1c4shob{display:flex;justify-content:space-between;text-align:center;width:60%}.input-container.svelte-1c4shob{text-align:center}.button-container.svelte-1c4shob{display:flex}";
     	append(document.head, style);
     }
 
-    // (106:2) {#if quiz}
+    // (122:2) {#if quiz}
     function create_if_block(ctx) {
     	let div0;
     	let player0;
@@ -2829,9 +2955,9 @@ var app = (function () {
     			t6 = space();
     			div2 = element("div");
     			create_component(input.$$.fragment);
-    			attr(div0, "class", "player-container svelte-qgjng3");
-    			attr(div1, "class", "team-answer-container svelte-qgjng3");
-    			attr(div2, "class", "input-container svelte-qgjng3");
+    			attr(div0, "class", "player-container svelte-1c4shob");
+    			attr(div1, "class", "team-answer-container svelte-1c4shob");
+    			attr(div2, "class", "input-container svelte-1c4shob");
     		},
     		m(target, anchor) {
     			insert(target, div0, anchor);
@@ -2943,29 +3069,49 @@ var app = (function () {
     }
 
     function create_fragment$4(ctx) {
-    	let div;
-    	let t;
-    	let skipbutton;
+    	let div1;
+    	let t0;
+    	let div0;
+    	let skipbutton0;
+    	let t1;
+    	let skipbutton1;
     	let current;
     	let if_block = /*quiz*/ ctx[0] && create_if_block(ctx);
 
-    	skipbutton = new SkipButton({
-    			props: { onClick: /*handleSkipClick*/ ctx[6] }
+    	skipbutton0 = new SkipButton({
+    			props: {
+    				onClick: /*handleNextQuizClick*/ ctx[6],
+    				type: "quiz"
+    			}
+    		});
+
+    	skipbutton1 = new SkipButton({
+    			props: {
+    				onClick: /*handleSkipPartClick*/ ctx[7],
+    				type: "part"
+    			}
     		});
 
     	return {
     		c() {
-    			div = element("div");
+    			div1 = element("div");
     			if (if_block) if_block.c();
-    			t = space();
-    			create_component(skipbutton.$$.fragment);
-    			attr(div, "class", "quiz-container svelte-qgjng3");
+    			t0 = space();
+    			div0 = element("div");
+    			create_component(skipbutton0.$$.fragment);
+    			t1 = space();
+    			create_component(skipbutton1.$$.fragment);
+    			attr(div0, "class", "button-container svelte-1c4shob");
+    			attr(div1, "class", "quiz-container svelte-1c4shob");
     		},
     		m(target, anchor) {
-    			insert(target, div, anchor);
-    			if (if_block) if_block.m(div, null);
-    			append(div, t);
-    			mount_component(skipbutton, div, null);
+    			insert(target, div1, anchor);
+    			if (if_block) if_block.m(div1, null);
+    			append(div1, t0);
+    			append(div1, div0);
+    			mount_component(skipbutton0, div0, null);
+    			append(div0, t1);
+    			mount_component(skipbutton1, div0, null);
     			current = true;
     		},
     		p(ctx, [dirty]) {
@@ -2980,7 +3126,7 @@ var app = (function () {
     					if_block = create_if_block(ctx);
     					if_block.c();
     					transition_in(if_block, 1);
-    					if_block.m(div, t);
+    					if_block.m(div1, t0);
     				}
     			} else if (if_block) {
     				group_outros();
@@ -2995,18 +3141,21 @@ var app = (function () {
     		i(local) {
     			if (current) return;
     			transition_in(if_block);
-    			transition_in(skipbutton.$$.fragment, local);
+    			transition_in(skipbutton0.$$.fragment, local);
+    			transition_in(skipbutton1.$$.fragment, local);
     			current = true;
     		},
     		o(local) {
     			transition_out(if_block);
-    			transition_out(skipbutton.$$.fragment, local);
+    			transition_out(skipbutton0.$$.fragment, local);
+    			transition_out(skipbutton1.$$.fragment, local);
     			current = false;
     		},
     		d(detaching) {
-    			if (detaching) detach(div);
+    			if (detaching) detach(div1);
     			if (if_block) if_block.d();
-    			destroy_component(skipbutton);
+    			destroy_component(skipbutton0);
+    			destroy_component(skipbutton1);
     		}
     	};
     }
@@ -3089,7 +3238,7 @@ var app = (function () {
     		}
     	}
 
-    	function handleSkipClick() {
+    	function handleNextQuizClick() {
     		$$invalidate(1, answerForm.team.correct = true, answerForm);
     		$$invalidate(1, answerForm.year.correct = true, answerForm);
     		$$invalidate(1, answerForm.top.correct = true, answerForm);
@@ -3107,6 +3256,25 @@ var app = (function () {
     		);
     	}
 
+    	function handleSkipPartClick() {
+    		$$invalidate(1, answerForm[currentQ].correct = true, answerForm);
+    		qs.shift();
+
+    		if (qs.length === 0) {
+    			const newQuizTimeout = setTimeout(
+    				() => {
+    					createQuiz();
+    					qs = [...Object.keys(defaultAnswerForm)];
+    					$$invalidate(2, currentQ = qs[0]);
+    					clearTimeout(newQuizTimeout);
+    				},
+    				1000
+    			);
+    		} else {
+    			$$invalidate(2, currentQ = qs[0]);
+    		}
+    	}
+
     	onMount(() => {
     		createQuiz();
     	});
@@ -3118,14 +3286,15 @@ var app = (function () {
     		isPrevQCorrect,
     		handleInputChance,
     		handleInputEnter,
-    		handleSkipClick
+    		handleNextQuizClick,
+    		handleSkipPartClick
     	];
     }
 
     class Quiz extends SvelteComponent {
     	constructor(options) {
     		super();
-    		if (!document.getElementById("svelte-qgjng3-style")) add_css$4();
+    		if (!document.getElementById("svelte-1c4shob-style")) add_css$4();
     		init(this, options, instance, create_fragment$4, safe_not_equal, {});
     	}
     }
