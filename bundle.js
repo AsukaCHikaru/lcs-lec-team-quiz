@@ -3318,7 +3318,7 @@ var app = (function () {
     			div.innerHTML = `<h3 class="rules-title svelte-130z752">Rules</h3> 
   <ul class="rules-ul svelte-130z752"><li class="svelte-130z752">NALCS, LCS, EULCS, LEC teams, excluding academy.</li> 
     <li class="svelte-130z752">From 2013 spring to 2021 summer.</li> 
-    <li class="svelte-130z752">For players with changed IGNs, all IGNs are eligible.</li> 
+    <li class="svelte-130z752">For players with changed competitive IGNs, all IGNs are eligible.</li> 
     <li class="svelte-130z752">Data is based on <a href="https://lol.fandom.com/wiki/League_of_Legends_Esports_Wiki" rel="noreferrer noopener" target="_blank" class="svelte-130z752">Leaguepedia</a>.</li> 
     <li class="svelte-130z752">Exclusive answer for every quiz. If there are invalid quizzes (eg. multiple answers), I&#39;m sorry :p</li></ul>`;
 
