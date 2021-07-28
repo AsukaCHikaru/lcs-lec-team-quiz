@@ -19,7 +19,6 @@
   const defaultAnswerForm = {
     team: { value: '', answer: [], correct: false },
     year: { value: '', answer: [], correct: false },
-    split: { value: '', answer: [], correct: false },
     top: { value: '', answer: [], correct: false },
     jungle: { value: '', answer: [], correct: false },
     mid: { value: '', answer: [], correct: false },
@@ -43,7 +42,6 @@
 
     answerForm.team.answer = [...quiz.team.name.map(name => generalizeName(name)), quiz.team.abbr.toLowerCase()];
     answerForm.year.answer = quiz.year;
-    answerForm.split.answer = quiz.split.toLowerCase();
     answerForm.top.answer = [...quiz.players.TOP.ign.map(name => generalizeName(name))];
     answerForm.jungle.answer = [...quiz.players.JG.ign.map(name => generalizeName(name))];
     answerForm.mid.answer = [...quiz.players.MID.ign.map(name => generalizeName(name))];
@@ -63,8 +61,7 @@
       key === "mid" && answerForm.mid.answer.includes(generalizeName(answerForm[key].value)) || 
       key === "bot" && answerForm.bot.answer.includes(generalizeName(answerForm[key].value)) || 
       key === "support" && answerForm.support.answer.includes(generalizeName(answerForm[key].value)) || 
-      key === "year" && answerForm[key].answer === generalizeName(answerForm[key].value) ||
-      key === "split" && answerForm[key].answer === generalizeName(answerForm[key].value)
+      key === "year" && answerForm[key].answer === generalizeName(answerForm[key].value)
     ) {
       isPrevQCorrect = true;
       answerForm[key].correct = true;
@@ -88,7 +85,6 @@
   function handleSkipClick () {
     answerForm.team.correct = true;
     answerForm.year.correct = true;
-    answerForm.split.correct = true;
     answerForm.top.correct = true;
     answerForm.jungle.correct = true;
     answerForm.mid.correct = true;
@@ -152,12 +148,6 @@
         answer={quiz.year}
         isCurrentAnswering={currentQ === 'year'}
         isCorrect={answerForm.year.correct}
-      />
-      <Answer
-        question="Split"
-        answer={quiz.split}
-        isCurrentAnswering={currentQ === 'split'}
-        isCorrect={answerForm.split.correct}
       />
     </div>
     <div class="input-container">
