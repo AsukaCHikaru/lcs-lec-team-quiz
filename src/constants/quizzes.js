@@ -466,7 +466,7 @@ export const data = [
       TOP: players.TOP.sOAZ,
       JG: players.JG.Amazing,
       MID: players.MID.XPeke,
-      BOT: players.BOT.Niels,
+      BOT: players.BOT.Zven,
       SPT: players.SPT.Mithy,
     },
   },
