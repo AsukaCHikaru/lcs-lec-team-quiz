@@ -900,7 +900,7 @@ var app = (function () {
           nationality: "US",
         },
         Zven: {
-          ign: ["Zven"],
+          ign: ["Zven", "Niels"],
           position: "BOT",
           nationality: "DK",
         },
@@ -1028,11 +1028,6 @@ var app = (function () {
           ign: ["Creaton"],
           position: "BOT",
           nationality: "PL",
-        },
-        Niels: {
-          ign: ["Niels"],
-          position: "BOT",
-          nationality: "DK",
         },
         Upset: {
           ign: ["Upset"],
@@ -1792,7 +1787,7 @@ var app = (function () {
           TOP: players.TOP.sOAZ,
           JG: players.JG.Amazing,
           MID: players.MID.XPeke,
-          BOT: players.BOT.Niels,
+          BOT: players.BOT.Zven,
           SPT: players.SPT.Mithy,
         },
       },
@@ -2714,12 +2709,12 @@ var app = (function () {
 
     function add_css$4() {
     	var style = element("style");
-    	style.id = "svelte-12e15jg-style";
-    	style.textContent = ".quiz-container.svelte-12e15jg{display:flex;flex-direction:column;justify-content:space-between;align-items:center;width:100%}.player-container.svelte-12e15jg{display:flex;flex-direction:row;justify-content:space-between;width:100%}.team-answer-container.svelte-12e15jg{display:flex;justify-content:space-between;text-align:center;width:60%}.input-container.svelte-12e15jg{text-align:center}";
+    	style.id = "svelte-qgjng3-style";
+    	style.textContent = ".quiz-container.svelte-qgjng3{display:flex;flex-direction:column;justify-content:space-between;align-items:center;width:100%}.player-container.svelte-qgjng3{display:flex;flex-direction:row;justify-content:space-between;width:100%}.team-answer-container.svelte-qgjng3{display:flex;justify-content:space-between;text-align:center;width:60%}.input-container.svelte-qgjng3{text-align:center}";
     	append(document.head, style);
     }
 
-    // (95:2) {#if quiz}
+    // (106:2) {#if quiz}
     function create_if_block(ctx) {
     	let div0;
     	let player0;
@@ -2737,8 +2732,6 @@ var app = (function () {
     	let t5;
     	let answer1;
     	let t6;
-    	let answer2;
-    	let t7;
     	let div2;
     	let input;
     	let current;
@@ -2806,20 +2799,11 @@ var app = (function () {
     			}
     		});
 
-    	answer2 = new Answer({
-    			props: {
-    				question: "Split",
-    				answer: /*quiz*/ ctx[0].split,
-    				isCurrentAnswering: /*currentQ*/ ctx[2] === "split",
-    				isCorrect: /*answerForm*/ ctx[1].split.correct
-    			}
-    		});
-
     	input = new Input({
     			props: {
     				question: /*currentQ*/ ctx[2],
-    				onChange: /*handleInputChance*/ ctx[5],
-    				onEnter: /*handleInputEnter*/ ctx[6],
+    				onChange: /*handleInputChance*/ ctx[4],
+    				onEnter: /*handleInputEnter*/ ctx[5],
     				value: /*answerForm*/ ctx[1][/*currentQ*/ ctx[2]].value,
     				isPrevQCorrect: /*isPrevQCorrect*/ ctx[3]
     			}
@@ -2843,13 +2827,11 @@ var app = (function () {
     			t5 = space();
     			create_component(answer1.$$.fragment);
     			t6 = space();
-    			create_component(answer2.$$.fragment);
-    			t7 = space();
     			div2 = element("div");
     			create_component(input.$$.fragment);
-    			attr(div0, "class", "player-container svelte-12e15jg");
-    			attr(div1, "class", "team-answer-container svelte-12e15jg");
-    			attr(div2, "class", "input-container svelte-12e15jg");
+    			attr(div0, "class", "player-container svelte-qgjng3");
+    			attr(div1, "class", "team-answer-container svelte-qgjng3");
+    			attr(div2, "class", "input-container svelte-qgjng3");
     		},
     		m(target, anchor) {
     			insert(target, div0, anchor);
@@ -2867,9 +2849,7 @@ var app = (function () {
     			mount_component(answer0, div1, null);
     			append(div1, t5);
     			mount_component(answer1, div1, null);
-    			append(div1, t6);
-    			mount_component(answer2, div1, null);
-    			insert(target, t7, anchor);
+    			insert(target, t6, anchor);
     			insert(target, div2, anchor);
     			mount_component(input, div2, null);
     			current = true;
@@ -2915,11 +2895,6 @@ var app = (function () {
     			if (dirty & /*currentQ*/ 4) answer1_changes.isCurrentAnswering = /*currentQ*/ ctx[2] === "year";
     			if (dirty & /*answerForm*/ 2) answer1_changes.isCorrect = /*answerForm*/ ctx[1].year.correct;
     			answer1.$set(answer1_changes);
-    			const answer2_changes = {};
-    			if (dirty & /*quiz*/ 1) answer2_changes.answer = /*quiz*/ ctx[0].split;
-    			if (dirty & /*currentQ*/ 4) answer2_changes.isCurrentAnswering = /*currentQ*/ ctx[2] === "split";
-    			if (dirty & /*answerForm*/ 2) answer2_changes.isCorrect = /*answerForm*/ ctx[1].split.correct;
-    			answer2.$set(answer2_changes);
     			const input_changes = {};
     			if (dirty & /*currentQ*/ 4) input_changes.question = /*currentQ*/ ctx[2];
     			if (dirty & /*answerForm, currentQ*/ 6) input_changes.value = /*answerForm*/ ctx[1][/*currentQ*/ ctx[2]].value;
@@ -2935,7 +2910,6 @@ var app = (function () {
     			transition_in(player4.$$.fragment, local);
     			transition_in(answer0.$$.fragment, local);
     			transition_in(answer1.$$.fragment, local);
-    			transition_in(answer2.$$.fragment, local);
     			transition_in(input.$$.fragment, local);
     			current = true;
     		},
@@ -2947,7 +2921,6 @@ var app = (function () {
     			transition_out(player4.$$.fragment, local);
     			transition_out(answer0.$$.fragment, local);
     			transition_out(answer1.$$.fragment, local);
-    			transition_out(answer2.$$.fragment, local);
     			transition_out(input.$$.fragment, local);
     			current = false;
     		},
@@ -2962,8 +2935,7 @@ var app = (function () {
     			if (detaching) detach(div1);
     			destroy_component(answer0);
     			destroy_component(answer1);
-    			destroy_component(answer2);
-    			if (detaching) detach(t7);
+    			if (detaching) detach(t6);
     			if (detaching) detach(div2);
     			destroy_component(input);
     		}
@@ -2978,7 +2950,7 @@ var app = (function () {
     	let if_block = /*quiz*/ ctx[0] && create_if_block(ctx);
 
     	skipbutton = new SkipButton({
-    			props: { onClick: /*createQuiz*/ ctx[4] }
+    			props: { onClick: /*handleSkipClick*/ ctx[6] }
     		});
 
     	return {
@@ -2987,7 +2959,7 @@ var app = (function () {
     			if (if_block) if_block.c();
     			t = space();
     			create_component(skipbutton.$$.fragment);
-    			attr(div, "class", "quiz-container svelte-12e15jg");
+    			attr(div, "class", "quiz-container svelte-qgjng3");
     		},
     		m(target, anchor) {
     			insert(target, div, anchor);
@@ -3051,7 +3023,6 @@ var app = (function () {
     	const defaultAnswerForm = {
     		team: { value: "", answer: [], correct: false },
     		year: { value: "", answer: [], correct: false },
-    		split: { value: "", answer: [], correct: false },
     		top: { value: "", answer: [], correct: false },
     		jungle: { value: "", answer: [], correct: false },
     		mid: { value: "", answer: [], correct: false },
@@ -3062,6 +3033,7 @@ var app = (function () {
     	let qs = [...Object.keys(defaultAnswerForm)];
 
     	function resetAnswerForm() {
+    		$$invalidate(2, currentQ = "team");
     		$$invalidate(1, answerForm = JSON.parse(JSON.stringify(defaultAnswerForm)));
     	}
 
@@ -3071,7 +3043,6 @@ var app = (function () {
     		quizNo = pool[Math.floor(Math.random() * pool.length)];
     		answeredPool.push(quizNo);
     		$$invalidate(0, quiz = data[quizNo]);
-    		console.log(quiz);
 
     		$$invalidate(
     			1,
@@ -3083,7 +3054,6 @@ var app = (function () {
     		);
 
     		$$invalidate(1, answerForm.year.answer = quiz.year, answerForm);
-    		$$invalidate(1, answerForm.split.answer = quiz.split.toLowerCase(), answerForm);
     		$$invalidate(1, answerForm.top.answer = [...quiz.players.TOP.ign.map(name => generalizeName(name))], answerForm);
     		$$invalidate(1, answerForm.jungle.answer = [...quiz.players.JG.ign.map(name => generalizeName(name))], answerForm);
     		$$invalidate(1, answerForm.mid.answer = [...quiz.players.MID.ign.map(name => generalizeName(name))], answerForm);
@@ -3096,7 +3066,7 @@ var app = (function () {
     	}
 
     	function handleInputEnter(key) {
-    		if (key === "team" && answerForm.team.answer.includes(generalizeName(answerForm[key].value)) || key === "top" && answerForm.top.answer.includes(generalizeName(answerForm[key].value)) || key === "jungle" && answerForm.jungle.answer.includes(generalizeName(answerForm[key].value)) || key === "mid" && answerForm.mid.answer.includes(generalizeName(answerForm[key].value)) || key === "bot" && answerForm.bot.answer.includes(generalizeName(answerForm[key].value)) || key === "support" && answerForm.support.answer.includes(generalizeName(answerForm[key].value)) || key === "year" && answerForm[key].answer === generalizeName(answerForm[key].value) || key === "split" && answerForm[key].answer === generalizeName(answerForm[key].value)) {
+    		if (key === "team" && answerForm.team.answer.includes(generalizeName(answerForm[key].value)) || key === "top" && answerForm.top.answer.includes(generalizeName(answerForm[key].value)) || key === "jungle" && answerForm.jungle.answer.includes(generalizeName(answerForm[key].value)) || key === "mid" && answerForm.mid.answer.includes(generalizeName(answerForm[key].value)) || key === "bot" && answerForm.bot.answer.includes(generalizeName(answerForm[key].value)) || key === "support" && answerForm.support.answer.includes(generalizeName(answerForm[key].value)) || key === "year" && answerForm[key].answer === generalizeName(answerForm[key].value)) {
     			$$invalidate(3, isPrevQCorrect = true);
     			$$invalidate(1, answerForm[key].correct = true, answerForm);
     			qs.shift();
@@ -3119,6 +3089,24 @@ var app = (function () {
     		}
     	}
 
+    	function handleSkipClick() {
+    		$$invalidate(1, answerForm.team.correct = true, answerForm);
+    		$$invalidate(1, answerForm.year.correct = true, answerForm);
+    		$$invalidate(1, answerForm.top.correct = true, answerForm);
+    		$$invalidate(1, answerForm.jungle.correct = true, answerForm);
+    		$$invalidate(1, answerForm.mid.correct = true, answerForm);
+    		$$invalidate(1, answerForm.bot.correct = true, answerForm);
+    		$$invalidate(1, answerForm.support.correct = true, answerForm);
+
+    		const newQuizTimeout = setTimeout(
+    			() => {
+    				createQuiz();
+    				clearTimeout(newQuizTimeout);
+    			},
+    			2000
+    		);
+    	}
+
     	onMount(() => {
     		createQuiz();
     	});
@@ -3128,16 +3116,16 @@ var app = (function () {
     		answerForm,
     		currentQ,
     		isPrevQCorrect,
-    		createQuiz,
     		handleInputChance,
-    		handleInputEnter
+    		handleInputEnter,
+    		handleSkipClick
     	];
     }
 
     class Quiz extends SvelteComponent {
     	constructor(options) {
     		super();
-    		if (!document.getElementById("svelte-12e15jg-style")) add_css$4();
+    		if (!document.getElementById("svelte-qgjng3-style")) add_css$4();
     		init(this, options, instance, create_fragment$4, safe_not_equal, {});
     	}
     }
@@ -3159,10 +3147,11 @@ var app = (function () {
     			div = element("div");
 
     			div.innerHTML = `<h3 class="rules-title svelte-130z752">Rules</h3> 
-  <ul class="rules-ul svelte-130z752"><li class="svelte-130z752">Including NALCS, LCS, EULCS, LEC teams. Academy rosters are not included.</li> 
+  <ul class="rules-ul svelte-130z752"><li class="svelte-130z752">NALCS, LCS, EULCS, LEC teams, excluding academy.</li> 
     <li class="svelte-130z752">From 2013 spring to 2021 summer.</li> 
-    <li class="svelte-130z752">If a roster exists for over a split, the answer is the first split in that period.</li> 
-    <li class="svelte-130z752">Data is based on <a href="https://lol.fandom.com/wiki/League_of_Legends_Esports_Wiki" rel="noreferrer noopener" target="_blank" class="svelte-130z752">Leaguepedia</a>.</li></ul>`;
+    <li class="svelte-130z752">For players with changed IGNs, all IGNs are eligible.</li> 
+    <li class="svelte-130z752">Data is based on <a href="https://lol.fandom.com/wiki/League_of_Legends_Esports_Wiki" rel="noreferrer noopener" target="_blank" class="svelte-130z752">Leaguepedia</a>.</li> 
+    <li class="svelte-130z752">Exclusive answer for every quiz. If there are invalid quizzes (eg. multiple answers), I&#39;m sorry :p</li></ul>`;
 
     			attr(div, "class", "rules-container svelte-130z752");
     		},
