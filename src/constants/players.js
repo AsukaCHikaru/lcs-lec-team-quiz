@@ -609,7 +609,7 @@ export const players = {
     Neon: {
       ign: ["Neon"],
       position: "BOT",
-      nationality: "SI",
+      nationality: "SK",
     },
     Woolite: {
       ign: ["Woolite"],
