@@ -93,7 +93,7 @@
     const newQuizTimeout = setTimeout(() => {
       createQuiz();
       clearTimeout(newQuizTimeout);
-    }, 2000);
+    }, 4000);
   }
 
   function handleSkipPartClick () {
