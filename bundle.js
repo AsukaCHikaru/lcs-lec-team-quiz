@@ -529,7 +529,7 @@ var app = (function () {
           nationality: "KR",
         },
         RFLegendary: {
-          ign: ["RFLegendary", "RFLegendary"],
+          ign: ["RFLegendary", "RF"],
           position: "TOP",
           nationality: "UA",
         },
@@ -564,12 +564,12 @@ var app = (function () {
           nationality: "FR",
         },
         Kev1n: {
-          ign: ["Kev1n"],
+          ign: ["Kev1n", "Kevin"],
           position: "TOP",
           nationality: "DE",
         },
         fredy122: {
-          ign: ["fredy122"],
+          ign: ["fredy122", "fredy"],
           position: "TOP",
           nationality: "GB",
         },
@@ -828,7 +828,7 @@ var app = (function () {
           nationality: "BE",
         },
         Ry0ma: {
-          ign: ["Ry0ma"],
+          ign: ["Ry0ma", "Ryoma"],
           position: "MID",
           nationality: "AU",
         },
@@ -1030,12 +1030,12 @@ var app = (function () {
           nationality: "DE",
         },
         FORG1VEN: {
-          ign: ["FORG1VEN", "FORG1VENGRE"],
+          ign: ["FORG1VEN", "FORG1VENGRE", "FORGIVEN", "FORGIVENGRE"],
           position: "BOT",
           nationality: "GR",
         },
         P1noy: {
-          ign: ["P1noy"],
+          ign: ["P1noy", "Pinoy"],
           position: "BOT",
           nationality: "DK",
         },
@@ -3252,7 +3252,7 @@ var app = (function () {
     				createQuiz();
     				clearTimeout(newQuizTimeout);
     			},
-    			2000
+    			4000
     		);
     	}
 
@@ -3318,6 +3318,7 @@ var app = (function () {
     			div.innerHTML = `<h3 class="rules-title svelte-130z752">Rules</h3> 
   <ul class="rules-ul svelte-130z752"><li class="svelte-130z752">NALCS, LCS, EULCS, LEC teams, excluding academy.</li> 
     <li class="svelte-130z752">From 2013 spring to 2021 summer.</li> 
+    <li class="svelte-130z752">Rosters that at least played an official game.</li> 
     <li class="svelte-130z752">For players with changed competitive IGNs, all IGNs are eligible.</li> 
     <li class="svelte-130z752">Data is based on <a href="https://lol.fandom.com/wiki/League_of_Legends_Esports_Wiki" rel="noreferrer noopener" target="_blank" class="svelte-130z752">Leaguepedia</a>.</li> 
     <li class="svelte-130z752">Exclusive answer for every quiz. If there are invalid quizzes (eg. multiple answers), I&#39;m sorry :p</li></ul>`;
