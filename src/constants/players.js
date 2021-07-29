@@ -66,7 +66,7 @@ export const players = {
       nationality: "KR",
     },
     RFLegendary: {
-      ign: ["RFLegendary", "RFLegendary"],
+      ign: ["RFLegendary", "RF"],
       position: "TOP",
       nationality: "UA",
     },
@@ -101,12 +101,12 @@ export const players = {
       nationality: "FR",
     },
     Kev1n: {
-      ign: ["Kev1n"],
+      ign: ["Kev1n", "Kevin"],
       position: "TOP",
       nationality: "DE",
     },
     fredy122: {
-      ign: ["fredy122"],
+      ign: ["fredy122", "fredy"],
       position: "TOP",
       nationality: "GB",
     },
@@ -365,7 +365,7 @@ export const players = {
       nationality: "BE",
     },
     Ry0ma: {
-      ign: ["Ry0ma"],
+      ign: ["Ry0ma", "Ryoma"],
       position: "MID",
       nationality: "AU",
     },
@@ -567,12 +567,12 @@ export const players = {
       nationality: "DE",
     },
     FORG1VEN: {
-      ign: ["FORG1VEN", "FORG1VENGRE"],
+      ign: ["FORG1VEN", "FORG1VENGRE", "FORGIVEN", "FORGIVENGRE"],
       position: "BOT",
       nationality: "GR",
     },
     P1noy: {
-      ign: ["P1noy"],
+      ign: ["P1noy", "Pinoy"],
       position: "BOT",
       nationality: "DK",
     },
